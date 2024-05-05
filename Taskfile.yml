@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  create-contest:
+    cmds:
+      - mkdir -p {{.CLI_ARGS}}
+
+  create-problem:
+    cmds:
+      - mkdir -p {{.CLI_ARGS}}
+      - cp main.go {{.CLI_ARGS}}
