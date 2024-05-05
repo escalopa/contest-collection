@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://techpoint.ozon.ru/contest/56/task/278?tab=conditions -->
+<html lang="ru" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Techpoint</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Контест платформа Route256">
+<link rel="icon" type="image/x-icon" href="https://techpoint.ozon.ru/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="https://techpoint.ozon.ru/favicon.svg">
+<link rel="icon" type="image/png" href="https://techpoint.ozon.ru/favicon.png">
+<link rel="mask-icon" color="#ffffff" href="https://techpoint.ozon.ru/favicon.svg">
+<script src="./task-04_files/etcd-js" data-h-1ca38a9="" nonce=""></script>
+<script data-h-2a6c080="" nonce="">window.ETCD_PREFIX = "/"</script>
+<script nonce="">(function () {
+	var meshParamName = 'fe-meshversion'
+	// eslint-disable-next-line compat/compat
+	var urlParams = new URL(window.location)
+	var meshversionQuery = urlParams.searchParams.get(meshParamName)
+	if (meshversionQuery) {
+		document.cookie = `x-o3-meshversion=${meshversionQuery};path=/;`
+		urlParams.searchParams.delete(meshParamName)
+		window.history.replaceState({}, document.title, urlParams)
+		console.log('Кука x-o3-meshversion была установлена из URL.')
+	}
+})()
+</script>
+<script data-h-03f2237="" nonce="">(function () { window.FE_NUXT_CONFIG = { authorization: "ozon-id" } })()</script>
+<script src="./task-04_files/envs.js" data-h-99d92ac="" nonce=""></script><link rel="modulepreload" as="script" crossorigin="" href="./task-04_files/entry.63687e74.js"><link rel="preload" as="style" href="./task-04_files/entry.8f5e5fa6.css" nonce=""><link rel="prefetch" as="style" href="./task-04_files/default.54b4627d.css"><link rel="prefetch" as="style" href="./task-04_files/logout.8ea43077.css"><link rel="prefetch" as="style" href="./task-04_files/tests-download.5dc4490f.css"><link rel="prefetch" as="style" href="./task-04_files/dialog.d254b336.css"><link rel="prefetch" as="style" href="./task-04_files/counter.2c6e3b9f.css"><link rel="prefetch" as="style" href="./task-04_files/data-content.8c295de0.css"><link rel="prefetch" as="style" href="./task-04_files/link.e94421c4.css"><link rel="prefetch" as="style" href="./task-04_files/send-tracker-event.721a3781.css"><link rel="prefetch" as="style" href="./task-04_files/tooltip.09bbb4be.css"><link rel="prefetch" as="style" href="./task-04_files/drawer.c93e5532.css"><link rel="prefetch" as="style" href="./task-04_files/link-pseudo.71f50246.css"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/default.5443f0f7.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/logout.2980b069.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/tests-download.module.faea84c0.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/dialog.fab972dc.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/counter.12482ad6.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/data-content.bcd5a5a7.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/shared.1afadf54.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/link.a4dff5d0.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/send-tracker-event.a36806c1.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/tooltip.8c55f112.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/drawer.a749b273.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/images.753df102.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/error-dialog.8c251030.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/render-notification-content.1d61dad7.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/link-pseudo.69883867.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/error-testing-content.b798a19d.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/empty.a8807dfe.js"><link rel="prefetch" as="style" href="https://techpoint.ozon.ru/_nuxt/main.68abc28e.css"><link rel="prefetch" as="style" href="./task-04_files/tab.8ec32de0.css"><link rel="prefetch" as="style" href="./task-04_files/informer.97223d31.css"><link rel="prefetch" as="style" href="./task-04_files/input.45c240ee.css"><link rel="prefetch" as="style" href="https://techpoint.ozon.ru/_nuxt/filter-chip-toggle.3587f80d.css"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/main.fc5d4af9.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/tab.21e3f79a.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/informer.96d11762.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/input.18559358.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/shared.074f2574.js"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/filter-chip-toggle.d9da76bb.js"><link rel="prefetch" as="style" href="https://techpoint.ozon.ru/_nuxt/error-component.5283db9b.css"><link rel="prefetch" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/error-component.e7acc254.js"><link rel="stylesheet" href="./task-04_files/entry.8f5e5fa6.css"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/index.266b91ee.js"><link rel="stylesheet" href="./task-04_files/dialog.d254b336.css"><link rel="stylesheet" href="./task-04_files/tests-download.5dc4490f.css"><link rel="stylesheet" href="./task-04_files/link.e94421c4.css"><link rel="stylesheet" href="./task-04_files/link-pseudo.71f50246.css"><link rel="stylesheet" href="./task-04_files/send-tracker-event.721a3781.css"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/contest-status.a60d2fce.js"><link rel="stylesheet" href="./task-04_files/input.45c240ee.css"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/something-went-wrong.08aac91a.js"><link rel="stylesheet" href="./task-04_files/something-went-wrong.e495a80f.css"><link rel="stylesheet" href="./task-04_files/contest-status.c4011bda.css"><link rel="stylesheet" href="./task-04_files/tooltip.09bbb4be.css"><link rel="stylesheet" href="./task-04_files/index.fab72fc6.css"><link rel="stylesheet" href="./task-04_files/counter.2c6e3b9f.css"><link rel="stylesheet" href="./task-04_files/data-content.8c295de0.css"><link rel="stylesheet" href="./task-04_files/drawer.c93e5532.css"><link rel="stylesheet" href="./task-04_files/logout.8ea43077.css"><link rel="stylesheet" href="./task-04_files/default.54b4627d.css"><script>(function () {
+	var meshParamName = 'fe-meshversion'
+	// eslint-disable-next-line compat/compat
+	var urlParams = new URL(window.location)
+	var meshversionQuery = urlParams.searchParams.get(meshParamName)
+	if (meshversionQuery) {
+		document.cookie = `x-o3-meshversion=${meshversionQuery};path=/;`
+		urlParams.searchParams.delete(meshParamName)
+		window.history.replaceState({}, document.title, urlParams)
+		console.log('Кука x-o3-meshversion была установлена из URL.')
+	}
+})()
+</script><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/index.afeeafcf.js"><link rel="stylesheet" href="./task-04_files/informer.97223d31.css"><link rel="stylesheet" href="./task-04_files/tab.8ec32de0.css"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/skeleton.21f8f82d.js"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/timer-skeleton.5ab35566.js"><link rel="stylesheet" href="./task-04_files/timer-skeleton.0c3a79fa.css"><link rel="stylesheet" href="./task-04_files/index.7690f268.css"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/index.441ef1db.js"><link rel="modulepreload" as="script" crossorigin="" href="https://techpoint.ozon.ru/_nuxt/tests-download.34c1b167.js"><link rel="stylesheet" href="./task-04_files/index.84311ea6.css"><style type="text/css" media="screen" class="monaco-colors">.codicon-add:before { content: '\ea60'; }
+.codicon-plus:before { content: '\ea60'; }
+.codicon-gist-new:before { content: '\ea60'; }
+.codicon-repo-create:before { content: '\ea60'; }
+.codicon-lightbulb:before { content: '\ea61'; }
+.codicon-light-bulb:before { content: '\ea61'; }
+.codicon-repo:before { content: '\ea62'; }
+.codicon-repo-delete:before { content: '\ea62'; }
+.codicon-gist-fork:before { content: '\ea63'; }
+.codicon-repo-forked:before { content: '\ea63'; }
+.codicon-git-pull-request:before { content: '\ea64'; }
+.codicon-git-pull-request-abandoned:before { content: '\ea64'; }
+.codicon-record-keys:before { content: '\ea65'; }
+.codicon-keyboard:before { content: '\ea65'; }
+.codicon-tag:before { content: '\ea66'; }
+.codicon-tag-add:before { content: '\ea66'; }
+.codicon-tag-remove:before { content: '\ea66'; }
+.codicon-person:before { content: '\ea67'; }
+.codicon-person-follow:before { content: '\ea67'; }
+.codicon-person-outline:before { content: '\ea67'; }
+.codicon-person-filled:before { content: '\ea67'; }
+.codicon-git-branch:before { content: '\ea68'; }
+.codicon-git-branch-create:before { content: '\ea68'; }
+.codicon-git-branch-delete:before { content: '\ea68'; }
+.codicon-source-control:before { content: '\ea68'; }
+.codicon-mirror:before { content: '\ea69'; }
+.codicon-mirror-public:before { content: '\ea69'; }
+.codicon-star:before { content: '\ea6a'; }
+.codicon-star-add:before { content: '\ea6a'; }
+.codicon-star-delete:before { content: '\ea6a'; }
+.codicon-star-empty:before { content: '\ea6a'; }
+.codicon-comment:before { content: '\ea6b'; }
+.codicon-comment-add:before { content: '\ea6b'; }
+.codicon-alert:before { content: '\ea6c'; }
+.codicon-warning:before { content: '\ea6c'; }
+.codicon-search:before { content: '\ea6d'; }
+.codicon-search-save:before { content: '\ea6d'; }
+.codicon-log-out:before { content: '\ea6e'; }
+.codicon-sign-out:before { content: '\ea6e'; }
+.codicon-log-in:before { content: '\ea6f'; }
+.codicon-sign-in:before { content: '\ea6f'; }
+.codicon-eye:before { content: '\ea70'; }
+.codicon-eye-unwatch:before { content: '\ea70'; }
+.codicon-eye-watch:before { content: '\ea70'; }
+.codicon-circle-filled:before { content: '\ea71'; }
+.codicon-primitive-dot:before { content: '\ea71'; }
+.codicon-close-dirty:before { content: '\ea71'; }
+.codicon-debug-breakpoint:before { content: '\ea71'; }
+.codicon-debug-breakpoint-disabled:before { content: '\ea71'; }
+.codicon-debug-hint:before { content: '\ea71'; }
+.codicon-primitive-square:before { content: '\ea72'; }
+.codicon-edit:before { content: '\ea73'; }
+.codicon-pencil:before { content: '\ea73'; }
+.codicon-info:before { content: '\ea74'; }
+.codicon-issue-opened:before { content: '\ea74'; }
+.codicon-gist-private:before { content: '\ea75'; }
+.codicon-git-fork-private:before { content: '\ea75'; }
+.codicon-lock:before { content: '\ea75'; }
+.codicon-mirror-private:before { content: '\ea75'; }
+.codicon-close:before { content: '\ea76'; }
+.codicon-remove-close:before { content: '\ea76'; }
+.codicon-x:before { content: '\ea76'; }
+.codicon-repo-sync:before { content: '\ea77'; }
+.codicon-sync:before { content: '\ea77'; }
+.codicon-clone:before { content: '\ea78'; }
+.codicon-desktop-download:before { content: '\ea78'; }
+.codicon-beaker:before { content: '\ea79'; }
+.codicon-microscope:before { content: '\ea79'; }
+.codicon-vm:before { content: '\ea7a'; }
+.codicon-device-desktop:before { content: '\ea7a'; }
+.codicon-file:before { content: '\ea7b'; }
+.codicon-file-text:before { content: '\ea7b'; }
+.codicon-more:before { content: '\ea7c'; }
+.codicon-ellipsis:before { content: '\ea7c'; }
+.codicon-kebab-horizontal:before { content: '\ea7c'; }
+.codicon-mail-reply:before { content: '\ea7d'; }
+.codicon-reply:before { content: '\ea7d'; }
+.codicon-organization:before { content: '\ea7e'; }
+.codicon-organization-filled:before { content: '\ea7e'; }
+.codicon-organization-outline:before { content: '\ea7e'; }
+.codicon-new-file:before { content: '\ea7f'; }
+.codicon-file-add:before { content: '\ea7f'; }
+.codicon-new-folder:before { content: '\ea80'; }
+.codicon-file-directory-create:before { content: '\ea80'; }
+.codicon-trash:before { content: '\ea81'; }
+.codicon-trashcan:before { content: '\ea81'; }
+.codicon-history:before { content: '\ea82'; }
+.codicon-clock:before { content: '\ea82'; }
+.codicon-folder:before { content: '\ea83'; }
+.codicon-file-directory:before { content: '\ea83'; }
+.codicon-symbol-folder:before { content: '\ea83'; }
+.codicon-logo-github:before { content: '\ea84'; }
+.codicon-mark-github:before { content: '\ea84'; }
+.codicon-github:before { content: '\ea84'; }
+.codicon-terminal:before { content: '\ea85'; }
+.codicon-console:before { content: '\ea85'; }
+.codicon-repl:before { content: '\ea85'; }
+.codicon-zap:before { content: '\ea86'; }
+.codicon-symbol-event:before { content: '\ea86'; }
+.codicon-error:before { content: '\ea87'; }
+.codicon-stop:before { content: '\ea87'; }
+.codicon-variable:before { content: '\ea88'; }
+.codicon-symbol-variable:before { content: '\ea88'; }
+.codicon-array:before { content: '\ea8a'; }
+.codicon-symbol-array:before { content: '\ea8a'; }
+.codicon-symbol-module:before { content: '\ea8b'; }
+.codicon-symbol-package:before { content: '\ea8b'; }
+.codicon-symbol-namespace:before { content: '\ea8b'; }
+.codicon-symbol-object:before { content: '\ea8b'; }
+.codicon-symbol-method:before { content: '\ea8c'; }
+.codicon-symbol-function:before { content: '\ea8c'; }
+.codicon-symbol-constructor:before { content: '\ea8c'; }
+.codicon-symbol-boolean:before { content: '\ea8f'; }
+.codicon-symbol-null:before { content: '\ea8f'; }
+.codicon-symbol-numeric:before { content: '\ea90'; }
+.codicon-symbol-number:before { content: '\ea90'; }
+.codicon-symbol-structure:before { content: '\ea91'; }
+.codicon-symbol-struct:before { content: '\ea91'; }
+.codicon-symbol-parameter:before { content: '\ea92'; }
+.codicon-symbol-type-parameter:before { content: '\ea92'; }
+.codicon-symbol-key:before { content: '\ea93'; }
+.codicon-symbol-text:before { content: '\ea93'; }
+.codicon-symbol-reference:before { content: '\ea94'; }
+.codicon-go-to-file:before { content: '\ea94'; }
+.codicon-symbol-enum:before { content: '\ea95'; }
+.codicon-symbol-value:before { content: '\ea95'; }
+.codicon-symbol-ruler:before { content: '\ea96'; }
+.codicon-symbol-unit:before { content: '\ea96'; }
+.codicon-activate-breakpoints:before { content: '\ea97'; }
+.codicon-archive:before { content: '\ea98'; }
+.codicon-arrow-both:before { content: '\ea99'; }
+.codicon-arrow-down:before { content: '\ea9a'; }
+.codicon-arrow-left:before { content: '\ea9b'; }
+.codicon-arrow-right:before { content: '\ea9c'; }
+.codicon-arrow-small-down:before { content: '\ea9d'; }
+.codicon-arrow-small-left:before { content: '\ea9e'; }
+.codicon-arrow-small-right:before { content: '\ea9f'; }
+.codicon-arrow-small-up:before { content: '\eaa0'; }
+.codicon-arrow-up:before { content: '\eaa1'; }
+.codicon-bell:before { content: '\eaa2'; }
+.codicon-bold:before { content: '\eaa3'; }
+.codicon-book:before { content: '\eaa4'; }
+.codicon-bookmark:before { content: '\eaa5'; }
+.codicon-debug-breakpoint-conditional-unverified:before { content: '\eaa6'; }
+.codicon-debug-breakpoint-conditional:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-conditional-disabled:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-data-unverified:before { content: '\eaa8'; }
+.codicon-debug-breakpoint-data:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-data-disabled:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-log-unverified:before { content: '\eaaa'; }
+.codicon-debug-breakpoint-log:before { content: '\eaab'; }
+.codicon-debug-breakpoint-log-disabled:before { content: '\eaab'; }
+.codicon-briefcase:before { content: '\eaac'; }
+.codicon-broadcast:before { content: '\eaad'; }
+.codicon-browser:before { content: '\eaae'; }
+.codicon-bug:before { content: '\eaaf'; }
+.codicon-calendar:before { content: '\eab0'; }
+.codicon-case-sensitive:before { content: '\eab1'; }
+.codicon-check:before { content: '\eab2'; }
+.codicon-checklist:before { content: '\eab3'; }
+.codicon-chevron-down:before { content: '\eab4'; }
+.codicon-drop-down-button:before { content: '\eab4'; }
+.codicon-chevron-left:before { content: '\eab5'; }
+.codicon-chevron-right:before { content: '\eab6'; }
+.codicon-chevron-up:before { content: '\eab7'; }
+.codicon-chrome-close:before { content: '\eab8'; }
+.codicon-chrome-maximize:before { content: '\eab9'; }
+.codicon-chrome-minimize:before { content: '\eaba'; }
+.codicon-chrome-restore:before { content: '\eabb'; }
+.codicon-circle:before { content: '\eabc'; }
+.codicon-circle-outline:before { content: '\eabc'; }
+.codicon-debug-breakpoint-unverified:before { content: '\eabc'; }
+.codicon-circle-slash:before { content: '\eabd'; }
+.codicon-circuit-board:before { content: '\eabe'; }
+.codicon-clear-all:before { content: '\eabf'; }
+.codicon-clippy:before { content: '\eac0'; }
+.codicon-close-all:before { content: '\eac1'; }
+.codicon-cloud-download:before { content: '\eac2'; }
+.codicon-cloud-upload:before { content: '\eac3'; }
+.codicon-code:before { content: '\eac4'; }
+.codicon-collapse-all:before { content: '\eac5'; }
+.codicon-color-mode:before { content: '\eac6'; }
+.codicon-comment-discussion:before { content: '\eac7'; }
+.codicon-compare-changes:before { content: '\eafd'; }
+.codicon-credit-card:before { content: '\eac9'; }
+.codicon-dash:before { content: '\eacc'; }
+.codicon-dashboard:before { content: '\eacd'; }
+.codicon-database:before { content: '\eace'; }
+.codicon-debug-continue:before { content: '\eacf'; }
+.codicon-debug-disconnect:before { content: '\ead0'; }
+.codicon-debug-pause:before { content: '\ead1'; }
+.codicon-debug-restart:before { content: '\ead2'; }
+.codicon-debug-start:before { content: '\ead3'; }
+.codicon-debug-step-into:before { content: '\ead4'; }
+.codicon-debug-step-out:before { content: '\ead5'; }
+.codicon-debug-step-over:before { content: '\ead6'; }
+.codicon-debug-stop:before { content: '\ead7'; }
+.codicon-debug:before { content: '\ead8'; }
+.codicon-device-camera-video:before { content: '\ead9'; }
+.codicon-device-camera:before { content: '\eada'; }
+.codicon-device-mobile:before { content: '\eadb'; }
+.codicon-diff-added:before { content: '\eadc'; }
+.codicon-diff-ignored:before { content: '\eadd'; }
+.codicon-diff-modified:before { content: '\eade'; }
+.codicon-diff-removed:before { content: '\eadf'; }
+.codicon-diff-renamed:before { content: '\eae0'; }
+.codicon-diff:before { content: '\eae1'; }
+.codicon-discard:before { content: '\eae2'; }
+.codicon-editor-layout:before { content: '\eae3'; }
+.codicon-empty-window:before { content: '\eae4'; }
+.codicon-exclude:before { content: '\eae5'; }
+.codicon-extensions:before { content: '\eae6'; }
+.codicon-eye-closed:before { content: '\eae7'; }
+.codicon-file-binary:before { content: '\eae8'; }
+.codicon-file-code:before { content: '\eae9'; }
+.codicon-file-media:before { content: '\eaea'; }
+.codicon-file-pdf:before { content: '\eaeb'; }
+.codicon-file-submodule:before { content: '\eaec'; }
+.codicon-file-symlink-directory:before { content: '\eaed'; }
+.codicon-file-symlink-file:before { content: '\eaee'; }
+.codicon-file-zip:before { content: '\eaef'; }
+.codicon-files:before { content: '\eaf0'; }
+.codicon-filter:before { content: '\eaf1'; }
+.codicon-flame:before { content: '\eaf2'; }
+.codicon-fold-down:before { content: '\eaf3'; }
+.codicon-fold-up:before { content: '\eaf4'; }
+.codicon-fold:before { content: '\eaf5'; }
+.codicon-folder-active:before { content: '\eaf6'; }
+.codicon-folder-opened:before { content: '\eaf7'; }
+.codicon-gear:before { content: '\eaf8'; }
+.codicon-gift:before { content: '\eaf9'; }
+.codicon-gist-secret:before { content: '\eafa'; }
+.codicon-gist:before { content: '\eafb'; }
+.codicon-git-commit:before { content: '\eafc'; }
+.codicon-git-compare:before { content: '\eafd'; }
+.codicon-git-merge:before { content: '\eafe'; }
+.codicon-github-action:before { content: '\eaff'; }
+.codicon-github-alt:before { content: '\eb00'; }
+.codicon-globe:before { content: '\eb01'; }
+.codicon-grabber:before { content: '\eb02'; }
+.codicon-graph:before { content: '\eb03'; }
+.codicon-gripper:before { content: '\eb04'; }
+.codicon-heart:before { content: '\eb05'; }
+.codicon-home:before { content: '\eb06'; }
+.codicon-horizontal-rule:before { content: '\eb07'; }
+.codicon-hubot:before { content: '\eb08'; }
+.codicon-inbox:before { content: '\eb09'; }
+.codicon-issue-closed:before { content: '\eba4'; }
+.codicon-issue-reopened:before { content: '\eb0b'; }
+.codicon-issues:before { content: '\eb0c'; }
+.codicon-italic:before { content: '\eb0d'; }
+.codicon-jersey:before { content: '\eb0e'; }
+.codicon-json:before { content: '\eb0f'; }
+.codicon-bracket:before { content: '\eb0f'; }
+.codicon-kebab-vertical:before { content: '\eb10'; }
+.codicon-key:before { content: '\eb11'; }
+.codicon-law:before { content: '\eb12'; }
+.codicon-lightbulb-autofix:before { content: '\eb13'; }
+.codicon-link-external:before { content: '\eb14'; }
+.codicon-link:before { content: '\eb15'; }
+.codicon-list-ordered:before { content: '\eb16'; }
+.codicon-list-unordered:before { content: '\eb17'; }
+.codicon-live-share:before { content: '\eb18'; }
+.codicon-loading:before { content: '\eb19'; }
+.codicon-location:before { content: '\eb1a'; }
+.codicon-mail-read:before { content: '\eb1b'; }
+.codicon-mail:before { content: '\eb1c'; }
+.codicon-markdown:before { content: '\eb1d'; }
+.codicon-megaphone:before { content: '\eb1e'; }
+.codicon-mention:before { content: '\eb1f'; }
+.codicon-milestone:before { content: '\eb20'; }
+.codicon-mortar-board:before { content: '\eb21'; }
+.codicon-move:before { content: '\eb22'; }
+.codicon-multiple-windows:before { content: '\eb23'; }
+.codicon-mute:before { content: '\eb24'; }
+.codicon-no-newline:before { content: '\eb25'; }
+.codicon-note:before { content: '\eb26'; }
+.codicon-octoface:before { content: '\eb27'; }
+.codicon-open-preview:before { content: '\eb28'; }
+.codicon-package:before { content: '\eb29'; }
+.codicon-paintcan:before { content: '\eb2a'; }
+.codicon-pin:before { content: '\eb2b'; }
+.codicon-play:before { content: '\eb2c'; }
+.codicon-run:before { content: '\eb2c'; }
+.codicon-plug:before { content: '\eb2d'; }
+.codicon-preserve-case:before { content: '\eb2e'; }
+.codicon-preview:before { content: '\eb2f'; }
+.codicon-project:before { content: '\eb30'; }
+.codicon-pulse:before { content: '\eb31'; }
+.codicon-question:before { content: '\eb32'; }
+.codicon-quote:before { content: '\eb33'; }
+.codicon-radio-tower:before { content: '\eb34'; }
+.codicon-reactions:before { content: '\eb35'; }
+.codicon-references:before { content: '\eb36'; }
+.codicon-refresh:before { content: '\eb37'; }
+.codicon-regex:before { content: '\eb38'; }
+.codicon-remote-explorer:before { content: '\eb39'; }
+.codicon-remote:before { content: '\eb3a'; }
+.codicon-remove:before { content: '\eb3b'; }
+.codicon-replace-all:before { content: '\eb3c'; }
+.codicon-replace:before { content: '\eb3d'; }
+.codicon-repo-clone:before { content: '\eb3e'; }
+.codicon-repo-force-push:before { content: '\eb3f'; }
+.codicon-repo-pull:before { content: '\eb40'; }
+.codicon-repo-push:before { content: '\eb41'; }
+.codicon-report:before { content: '\eb42'; }
+.codicon-request-changes:before { content: '\eb43'; }
+.codicon-rocket:before { content: '\eb44'; }
+.codicon-root-folder-opened:before { content: '\eb45'; }
+.codicon-root-folder:before { content: '\eb46'; }
+.codicon-rss:before { content: '\eb47'; }
+.codicon-ruby:before { content: '\eb48'; }
+.codicon-save-all:before { content: '\eb49'; }
+.codicon-save-as:before { content: '\eb4a'; }
+.codicon-save:before { content: '\eb4b'; }
+.codicon-screen-full:before { content: '\eb4c'; }
+.codicon-screen-normal:before { content: '\eb4d'; }
+.codicon-search-stop:before { content: '\eb4e'; }
+.codicon-server:before { content: '\eb50'; }
+.codicon-settings-gear:before { content: '\eb51'; }
+.codicon-settings:before { content: '\eb52'; }
+.codicon-shield:before { content: '\eb53'; }
+.codicon-smiley:before { content: '\eb54'; }
+.codicon-sort-precedence:before { content: '\eb55'; }
+.codicon-split-horizontal:before { content: '\eb56'; }
+.codicon-split-vertical:before { content: '\eb57'; }
+.codicon-squirrel:before { content: '\eb58'; }
+.codicon-star-full:before { content: '\eb59'; }
+.codicon-star-half:before { content: '\eb5a'; }
+.codicon-symbol-class:before { content: '\eb5b'; }
+.codicon-symbol-color:before { content: '\eb5c'; }
+.codicon-symbol-customcolor:before { content: '\eb5c'; }
+.codicon-symbol-constant:before { content: '\eb5d'; }
+.codicon-symbol-enum-member:before { content: '\eb5e'; }
+.codicon-symbol-field:before { content: '\eb5f'; }
+.codicon-symbol-file:before { content: '\eb60'; }
+.codicon-symbol-interface:before { content: '\eb61'; }
+.codicon-symbol-keyword:before { content: '\eb62'; }
+.codicon-symbol-misc:before { content: '\eb63'; }
+.codicon-symbol-operator:before { content: '\eb64'; }
+.codicon-symbol-property:before { content: '\eb65'; }
+.codicon-wrench:before { content: '\eb65'; }
+.codicon-wrench-subaction:before { content: '\eb65'; }
+.codicon-symbol-snippet:before { content: '\eb66'; }
+.codicon-tasklist:before { content: '\eb67'; }
+.codicon-telescope:before { content: '\eb68'; }
+.codicon-text-size:before { content: '\eb69'; }
+.codicon-three-bars:before { content: '\eb6a'; }
+.codicon-thumbsdown:before { content: '\eb6b'; }
+.codicon-thumbsup:before { content: '\eb6c'; }
+.codicon-tools:before { content: '\eb6d'; }
+.codicon-triangle-down:before { content: '\eb6e'; }
+.codicon-triangle-left:before { content: '\eb6f'; }
+.codicon-triangle-right:before { content: '\eb70'; }
+.codicon-triangle-up:before { content: '\eb71'; }
+.codicon-twitter:before { content: '\eb72'; }
+.codicon-unfold:before { content: '\eb73'; }
+.codicon-unlock:before { content: '\eb74'; }
+.codicon-unmute:before { content: '\eb75'; }
+.codicon-unverified:before { content: '\eb76'; }
+.codicon-verified:before { content: '\eb77'; }
+.codicon-versions:before { content: '\eb78'; }
+.codicon-vm-active:before { content: '\eb79'; }
+.codicon-vm-outline:before { content: '\eb7a'; }
+.codicon-vm-running:before { content: '\eb7b'; }
+.codicon-watch:before { content: '\eb7c'; }
+.codicon-whitespace:before { content: '\eb7d'; }
+.codicon-whole-word:before { content: '\eb7e'; }
+.codicon-window:before { content: '\eb7f'; }
+.codicon-word-wrap:before { content: '\eb80'; }
+.codicon-zoom-in:before { content: '\eb81'; }
+.codicon-zoom-out:before { content: '\eb82'; }
+.codicon-list-filter:before { content: '\eb83'; }
+.codicon-list-flat:before { content: '\eb84'; }
+.codicon-list-selection:before { content: '\eb85'; }
+.codicon-selection:before { content: '\eb85'; }
+.codicon-list-tree:before { content: '\eb86'; }
+.codicon-debug-breakpoint-function-unverified:before { content: '\eb87'; }
+.codicon-debug-breakpoint-function:before { content: '\eb88'; }
+.codicon-debug-breakpoint-function-disabled:before { content: '\eb88'; }
+.codicon-debug-stackframe-active:before { content: '\eb89'; }
+.codicon-circle-small-filled:before { content: '\eb8a'; }
+.codicon-debug-stackframe-dot:before { content: '\eb8a'; }
+.codicon-debug-stackframe:before { content: '\eb8b'; }
+.codicon-debug-stackframe-focused:before { content: '\eb8b'; }
+.codicon-debug-breakpoint-unsupported:before { content: '\eb8c'; }
+.codicon-symbol-string:before { content: '\eb8d'; }
+.codicon-debug-reverse-continue:before { content: '\eb8e'; }
+.codicon-debug-step-back:before { content: '\eb8f'; }
+.codicon-debug-restart-frame:before { content: '\eb90'; }
+.codicon-call-incoming:before { content: '\eb92'; }
+.codicon-call-outgoing:before { content: '\eb93'; }
+.codicon-menu:before { content: '\eb94'; }
+.codicon-expand-all:before { content: '\eb95'; }
+.codicon-feedback:before { content: '\eb96'; }
+.codicon-group-by-ref-type:before { content: '\eb97'; }
+.codicon-ungroup-by-ref-type:before { content: '\eb98'; }
+.codicon-account:before { content: '\eb99'; }
+.codicon-bell-dot:before { content: '\eb9a'; }
+.codicon-debug-console:before { content: '\eb9b'; }
+.codicon-library:before { content: '\eb9c'; }
+.codicon-output:before { content: '\eb9d'; }
+.codicon-run-all:before { content: '\eb9e'; }
+.codicon-sync-ignored:before { content: '\eb9f'; }
+.codicon-pinned:before { content: '\eba0'; }
+.codicon-github-inverted:before { content: '\eba1'; }
+.codicon-debug-alt:before { content: '\eb91'; }
+.codicon-server-process:before { content: '\eba2'; }
+.codicon-server-environment:before { content: '\eba3'; }
+.codicon-pass:before { content: '\eba4'; }
+.codicon-stop-circle:before { content: '\eba5'; }
+.codicon-play-circle:before { content: '\eba6'; }
+.codicon-record:before { content: '\eba7'; }
+.codicon-debug-alt-small:before { content: '\eba8'; }
+.codicon-vm-connect:before { content: '\eba9'; }
+.codicon-cloud:before { content: '\ebaa'; }
+.codicon-merge:before { content: '\ebab'; }
+.codicon-export:before { content: '\ebac'; }
+.codicon-graph-left:before { content: '\ebad'; }
+.codicon-magnet:before { content: '\ebae'; }
+.codicon-notebook:before { content: '\ebaf'; }
+.codicon-redo:before { content: '\ebb0'; }
+.codicon-check-all:before { content: '\ebb1'; }
+.codicon-pinned-dirty:before { content: '\ebb2'; }
+.codicon-pass-filled:before { content: '\ebb3'; }
+.codicon-circle-large-filled:before { content: '\ebb4'; }
+.codicon-circle-large:before { content: '\ebb5'; }
+.codicon-circle-large-outline:before { content: '\ebb5'; }
+.codicon-combine:before { content: '\ebb6'; }
+.codicon-gather:before { content: '\ebb6'; }
+.codicon-table:before { content: '\ebb7'; }
+.codicon-variable-group:before { content: '\ebb8'; }
+.codicon-type-hierarchy:before { content: '\ebb9'; }
+.codicon-type-hierarchy-sub:before { content: '\ebba'; }
+.codicon-type-hierarchy-super:before { content: '\ebbb'; }
+.codicon-git-pull-request-create:before { content: '\ebbc'; }
+.codicon-run-above:before { content: '\ebbd'; }
+.codicon-run-below:before { content: '\ebbe'; }
+.codicon-notebook-template:before { content: '\ebbf'; }
+.codicon-debug-rerun:before { content: '\ebc0'; }
+.codicon-workspace-trusted:before { content: '\ebc1'; }
+.codicon-workspace-untrusted:before { content: '\ebc2'; }
+.codicon-workspace-unspecified:before { content: '\ebc3'; }
+.codicon-terminal-cmd:before { content: '\ebc4'; }
+.codicon-terminal-debian:before { content: '\ebc5'; }
+.codicon-terminal-linux:before { content: '\ebc6'; }
+.codicon-terminal-powershell:before { content: '\ebc7'; }
+.codicon-terminal-tmux:before { content: '\ebc8'; }
+.codicon-terminal-ubuntu:before { content: '\ebc9'; }
+.codicon-terminal-bash:before { content: '\ebca'; }
+.codicon-arrow-swap:before { content: '\ebcb'; }
+.codicon-copy:before { content: '\ebcc'; }
+.codicon-person-add:before { content: '\ebcd'; }
+.codicon-filter-filled:before { content: '\ebce'; }
+.codicon-wand:before { content: '\ebcf'; }
+.codicon-debug-line-by-line:before { content: '\ebd0'; }
+.codicon-inspect:before { content: '\ebd1'; }
+.codicon-layers:before { content: '\ebd2'; }
+.codicon-layers-dot:before { content: '\ebd3'; }
+.codicon-layers-active:before { content: '\ebd4'; }
+.codicon-compass:before { content: '\ebd5'; }
+.codicon-compass-dot:before { content: '\ebd6'; }
+.codicon-compass-active:before { content: '\ebd7'; }
+.codicon-azure:before { content: '\ebd8'; }
+.codicon-issue-draft:before { content: '\ebd9'; }
+.codicon-git-pull-request-closed:before { content: '\ebda'; }
+.codicon-git-pull-request-draft:before { content: '\ebdb'; }
+.codicon-debug-all:before { content: '\ebdc'; }
+.codicon-debug-coverage:before { content: '\ebdd'; }
+.codicon-run-errors:before { content: '\ebde'; }
+.codicon-folder-library:before { content: '\ebdf'; }
+.codicon-debug-continue-small:before { content: '\ebe0'; }
+.codicon-beaker-stop:before { content: '\ebe1'; }
+.codicon-graph-line:before { content: '\ebe2'; }
+.codicon-graph-scatter:before { content: '\ebe3'; }
+.codicon-pie-chart:before { content: '\ebe4'; }
+.codicon-bracket-dot:before { content: '\ebe5'; }
+.codicon-bracket-error:before { content: '\ebe6'; }
+.codicon-lock-small:before { content: '\ebe7'; }
+.codicon-azure-devops:before { content: '\ebe8'; }
+.codicon-verified-filled:before { content: '\ebe9'; }
+.codicon-newline:before { content: '\ebea'; }
+.codicon-layout:before { content: '\ebeb'; }
+.codicon-layout-activitybar-left:before { content: '\ebec'; }
+.codicon-layout-activitybar-right:before { content: '\ebed'; }
+.codicon-layout-panel-left:before { content: '\ebee'; }
+.codicon-layout-panel-center:before { content: '\ebef'; }
+.codicon-layout-panel-justify:before { content: '\ebf0'; }
+.codicon-layout-panel-right:before { content: '\ebf1'; }
+.codicon-layout-panel:before { content: '\ebf2'; }
+.codicon-layout-sidebar-left:before { content: '\ebf3'; }
+.codicon-layout-sidebar-right:before { content: '\ebf4'; }
+.codicon-layout-statusbar:before { content: '\ebf5'; }
+.codicon-layout-menubar:before { content: '\ebf6'; }
+.codicon-layout-centered:before { content: '\ebf7'; }
+.codicon-layout-sidebar-right-off:before { content: '\ec00'; }
+.codicon-layout-panel-off:before { content: '\ec01'; }
+.codicon-layout-sidebar-left-off:before { content: '\ec02'; }
+.codicon-target:before { content: '\ebf8'; }
+.codicon-indent:before { content: '\ebf9'; }
+.codicon-record-small:before { content: '\ebfa'; }
+.codicon-error-small:before { content: '\ebfb'; }
+.codicon-arrow-circle-down:before { content: '\ebfc'; }
+.codicon-arrow-circle-left:before { content: '\ebfd'; }
+.codicon-arrow-circle-right:before { content: '\ebfe'; }
+.codicon-arrow-circle-up:before { content: '\ebff'; }
+.codicon-heart-filled:before { content: '\ec04'; }
+.codicon-map:before { content: '\ec05'; }
+.codicon-map-filled:before { content: '\ec06'; }
+.codicon-circle-small:before { content: '\ec07'; }
+.codicon-bell-slash:before { content: '\ec08'; }
+.codicon-bell-slash-dot:before { content: '\ec09'; }
+.codicon-comment-unresolved:before { content: '\ec0a'; }
+.codicon-git-pull-request-go-to-changes:before { content: '\ec0b'; }
+.codicon-git-pull-request-new-changes:before { content: '\ec0c'; }
+.codicon-search-fuzzy:before { content: '\ec0d'; }
+.codicon-comment-draft:before { content: '\ec0e'; }
+.codicon-send:before { content: '\ec0f'; }
+.codicon-sparkle:before { content: '\ec10'; }
+.codicon-insert:before { content: '\ec11'; }
+.codicon-dialog-error:before { content: '\ea87'; }
+.codicon-dialog-warning:before { content: '\ea6c'; }
+.codicon-dialog-info:before { content: '\ea74'; }
+.codicon-dialog-close:before { content: '\ea76'; }
+.codicon-tree-item-expanded:before { content: '\eab4'; }
+.codicon-tree-filter-on-type-on:before { content: '\eb83'; }
+.codicon-tree-filter-on-type-off:before { content: '\eb85'; }
+.codicon-tree-filter-clear:before { content: '\ea76'; }
+.codicon-tree-item-loading:before { content: '\eb19'; }
+.codicon-menu-selection:before { content: '\eab2'; }
+.codicon-menu-submenu:before { content: '\eab6'; }
+.codicon-menubar-more:before { content: '\ea7c'; }
+.codicon-scrollbar-button-left:before { content: '\eb6f'; }
+.codicon-scrollbar-button-right:before { content: '\eb70'; }
+.codicon-scrollbar-button-up:before { content: '\eb71'; }
+.codicon-scrollbar-button-down:before { content: '\eb6e'; }
+.codicon-toolbar-more:before { content: '\ea7c'; }
+.codicon-quick-input-back:before { content: '\ea9b'; }
+.codicon-widget-close:before { content: '\ea76'; }
+.codicon-goto-previous-location:before { content: '\eaa1'; }
+.codicon-goto-next-location:before { content: '\ea9a'; }
+.codicon-diff-review-insert:before { content: '\ea60'; }
+.codicon-diff-review-remove:before { content: '\eb3b'; }
+.codicon-diff-review-close:before { content: '\ea76'; }
+.codicon-diff-insert:before { content: '\ea60'; }
+.codicon-diff-remove:before { content: '\eb3b'; }
+.codicon-marker-navigation-next:before { content: '\ea9a'; }
+.codicon-marker-navigation-previous:before { content: '\eaa1'; }
+.codicon-inline-suggestion-hints-next:before { content: '\eab6'; }
+.codicon-inline-suggestion-hints-previous:before { content: '\eab5'; }
+.codicon-find-selection:before { content: '\eb85'; }
+.codicon-find-collapsed:before { content: '\eab6'; }
+.codicon-find-expanded:before { content: '\eab4'; }
+.codicon-find-replace:before { content: '\eb3d'; }
+.codicon-find-replace-all:before { content: '\eb3c'; }
+.codicon-find-previous-match:before { content: '\eaa1'; }
+.codicon-find-next-match:before { content: '\ea9a'; }
+.codicon-folding-expanded:before { content: '\eab4'; }
+.codicon-folding-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-expanded:before { content: '\eab4'; }
+.codicon-suggest-more-info:before { content: '\eab6'; }
+.codicon-parameter-hints-next:before { content: '\eab4'; }
+.codicon-parameter-hints-previous:before { content: '\eab7'; }
+.codicon-extensions-warning-message:before { content: '\ea6c'; }
+.monaco-editor .inputarea.ime-input { background-color: #f9fafb; }
+.monaco-editor .line-numbers.dimmed-line-number { color: rgba(35, 120, 147, 0.4); }
+.monaco-editor .view-overlays .current-line { background-color: #f9fafb; }
+.monaco-editor .margin-view-overlays .current-line-margin { background-color: #f9fafb; border: none; }
+.monaco-editor .view-overlays .current-line { border: 2px solid #f9fafb; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #f9fafb; }
+.monaco-editor .bracket-indent-guide.lvl-0 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-1 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-2 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-3 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-4 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-5 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-6 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-7 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-8 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-9 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-10 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-11 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-12 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-13 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-14 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-15 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-16 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-17 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-18 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-19 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-20 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-21 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-22 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-23 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-24 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-25 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-26 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .bracket-indent-guide.lvl-27 { --guide-color: rgba(4, 49, 250, 0.3); --guide-color-active: #0431fa; }
+.monaco-editor .bracket-indent-guide.lvl-28 { --guide-color: rgba(49, 147, 49, 0.3); --guide-color-active: #319331; }
+.monaco-editor .bracket-indent-guide.lvl-29 { --guide-color: rgba(123, 56, 20, 0.3); --guide-color-active: #7b3814; }
+.monaco-editor .vertical { box-shadow: 1px 0 0 0 var(--guide-color) inset; }
+.monaco-editor .horizontal-top { border-top: 1px solid var(--guide-color); }
+.monaco-editor .horizontal-bottom { border-bottom: 1px solid var(--guide-color); }
+.monaco-editor .vertical.indent-active { box-shadow: 1px 0 0 0 var(--guide-color-active) inset; }
+.monaco-editor .horizontal-top.indent-active { border-top: 1px solid var(--guide-color-active); }
+.monaco-editor .horizontal-bottom.indent-active { border-bottom: 1px solid var(--guide-color-active); }
+.monaco-editor .lines-content .core-guide-indent.lvl-0 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-1 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-2 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-3 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-4 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-5 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-6 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-7 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-8 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-9 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-10 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-11 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-12 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-13 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-14 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-15 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-16 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-17 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-18 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-19 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-20 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-21 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-22 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-23 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-24 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-25 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-26 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-27 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-28 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent.lvl-29 { --indent-color: #d3d3d3; --indent-color-active: #939393; }
+.monaco-editor .lines-content .core-guide-indent { box-shadow: 1px 0 0 0 var(--indent-color) inset; }
+.monaco-editor .lines-content .core-guide-indent.indent-active { box-shadow: 1px 0 0 0 var(--indent-color-active) inset; }
+.monaco-editor .cursors-layer .cursor { background-color: #000000; border-color: #000000; color: #ffffff; }
+.monaco-editor .unexpected-closing-bracket { color: rgba(255, 18, 18, 0.8); }
+.monaco-editor .bracket-highlighting-0 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-1 { color: #319331; }
+.monaco-editor .bracket-highlighting-2 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-3 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-4 { color: #319331; }
+.monaco-editor .bracket-highlighting-5 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-6 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-7 { color: #319331; }
+.monaco-editor .bracket-highlighting-8 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-9 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-10 { color: #319331; }
+.monaco-editor .bracket-highlighting-11 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-12 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-13 { color: #319331; }
+.monaco-editor .bracket-highlighting-14 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-15 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-16 { color: #319331; }
+.monaco-editor .bracket-highlighting-17 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-18 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-19 { color: #319331; }
+.monaco-editor .bracket-highlighting-20 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-21 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-22 { color: #319331; }
+.monaco-editor .bracket-highlighting-23 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-24 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-25 { color: #319331; }
+.monaco-editor .bracket-highlighting-26 { color: #7b3814; }
+.monaco-editor .bracket-highlighting-27 { color: #0431fa; }
+.monaco-editor .bracket-highlighting-28 { color: #319331; }
+.monaco-editor .bracket-highlighting-29 { color: #7b3814; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23e51400'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23bf8803'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%231a85ff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22%236c6c6c%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.showUnused .squiggly-inline-unnecessary { opacity: 0.467; }
+
+	.monaco-editor .diagonal-fill {
+		background-image: linear-gradient(
+			-45deg,
+			rgba(34, 34, 34, 0.2) 12.5%,
+			#0000 12.5%, #0000 50%,
+			rgba(34, 34, 34, 0.2) 50%, rgba(34, 34, 34, 0.2) 62.5%,
+			#0000 62.5%, #0000 100%
+		);
+		background-size: 8px 8px;
+	}
+	
+.monaco-editor .monaco-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-hover hr { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-hover hr { border-bottom: 0px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #a8ac94; }
+.monaco-editor .findScope { background-color: rgba(180, 180, 180, 0.3); }
+.monaco-editor .find-widget { background-color: #f3f3f3; }
+.monaco-editor .find-widget { box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.16); }
+.monaco-editor .find-widget { color: #616161; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #a1260d; }
+.monaco-editor .find-widget .monaco-sash { background-color: #c8c8c8; }
+
+		.monaco-editor .find-widget .button:not(.disabled):hover,
+		.monaco-editor .find-widget .codicon-find-selection:hover {
+			background-color: rgba(184, 184, 184, 0.31) !important;
+		}
+	
+.monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: #0090f1; }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor, .monaco-diff-editor { --vscode-foreground: #616161;
+--vscode-disabledForeground: rgba(97, 97, 97, 0.5);
+--vscode-errorForeground: #a1260d;
+--vscode-descriptionForeground: #717171;
+--vscode-icon-foreground: #424242;
+--vscode-focusBorder: #0090f1;
+--vscode-textSeparator-foreground: rgba(0, 0, 0, 0.18);
+--vscode-textLink-foreground: #006ab1;
+--vscode-textLink-activeForeground: #006ab1;
+--vscode-textPreformat-foreground: #a31515;
+--vscode-textBlockQuote-background: rgba(127, 127, 127, 0.1);
+--vscode-textBlockQuote-border: rgba(0, 122, 204, 0.5);
+--vscode-textCodeBlock-background: rgba(220, 220, 220, 0.4);
+--vscode-widget-shadow: rgba(0, 0, 0, 0.16);
+--vscode-input-background: #ffffff;
+--vscode-input-foreground: #616161;
+--vscode-inputOption-activeBorder: #007acc;
+--vscode-inputOption-hoverBackground: rgba(184, 184, 184, 0.31);
+--vscode-inputOption-activeBackground: rgba(0, 144, 241, 0.2);
+--vscode-inputOption-activeForeground: #000000;
+--vscode-input-placeholderForeground: rgba(97, 97, 97, 0.5);
+--vscode-inputValidation-infoBackground: #d6ecf2;
+--vscode-inputValidation-infoBorder: #007acc;
+--vscode-inputValidation-warningBackground: #f6f5d2;
+--vscode-inputValidation-warningBorder: #b89500;
+--vscode-inputValidation-errorBackground: #f2dede;
+--vscode-inputValidation-errorBorder: #be1100;
+--vscode-dropdown-background: #ffffff;
+--vscode-dropdown-foreground: #616161;
+--vscode-dropdown-border: #cecece;
+--vscode-button-foreground: #ffffff;
+--vscode-button-separator: rgba(255, 255, 255, 0.4);
+--vscode-button-background: #007acc;
+--vscode-button-hoverBackground: #0062a3;
+--vscode-button-secondaryForeground: #ffffff;
+--vscode-button-secondaryBackground: #5f6a79;
+--vscode-button-secondaryHoverBackground: #4c5561;
+--vscode-badge-background: #c4c4c4;
+--vscode-badge-foreground: #333333;
+--vscode-scrollbar-shadow: #dddddd;
+--vscode-scrollbarSlider-background: rgba(100, 100, 100, 0.4);
+--vscode-scrollbarSlider-hoverBackground: rgba(100, 100, 100, 0.7);
+--vscode-scrollbarSlider-activeBackground: rgba(0, 0, 0, 0.6);
+--vscode-progressBar-background: #0e70c0;
+--vscode-editorError-foreground: #e51400;
+--vscode-editorWarning-foreground: #bf8803;
+--vscode-editorInfo-foreground: #1a85ff;
+--vscode-editorHint-foreground: #6c6c6c;
+--vscode-sash-hoverBorder: #0090f1;
+--vscode-editor-background: #f9fafb;
+--vscode-editor-foreground: #000000;
+--vscode-editorStickyScroll-background: #f9fafb;
+--vscode-editorStickyScrollHover-background: #f0f0f0;
+--vscode-editorWidget-background: #f3f3f3;
+--vscode-editorWidget-foreground: #616161;
+--vscode-editorWidget-border: #c8c8c8;
+--vscode-quickInput-background: #f3f3f3;
+--vscode-quickInput-foreground: #616161;
+--vscode-quickInputTitle-background: rgba(0, 0, 0, 0.06);
+--vscode-pickerGroup-foreground: #0066bf;
+--vscode-pickerGroup-border: #cccedb;
+--vscode-keybindingLabel-background: rgba(221, 221, 221, 0.4);
+--vscode-keybindingLabel-foreground: #555555;
+--vscode-keybindingLabel-border: rgba(204, 204, 204, 0.4);
+--vscode-keybindingLabel-bottomBorder: rgba(187, 187, 187, 0.4);
+--vscode-editor-selectionBackground: #add6ff;
+--vscode-editor-inactiveSelectionBackground: #e5ebf1;
+--vscode-editor-selectionHighlightBackground: rgba(173, 214, 255, 0.3);
+--vscode-editor-findMatchBackground: #a8ac94;
+--vscode-editor-findMatchHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editor-findRangeHighlightBackground: rgba(180, 180, 180, 0.3);
+--vscode-searchEditor-findMatchBackground: rgba(234, 92, 0, 0.22);
+--vscode-search-resultsInfoForeground: #616161;
+--vscode-editor-hoverHighlightBackground: rgba(173, 214, 255, 0.15);
+--vscode-editorHoverWidget-background: #f3f3f3;
+--vscode-editorHoverWidget-foreground: #616161;
+--vscode-editorHoverWidget-border: #c8c8c8;
+--vscode-editorHoverWidget-statusBarBackground: #e7e7e7;
+--vscode-editorLink-activeForeground: #0000ff;
+--vscode-editorInlayHint-foreground: #616161;
+--vscode-editorInlayHint-background: rgba(196, 196, 196, 0.3);
+--vscode-editorInlayHint-typeForeground: #616161;
+--vscode-editorInlayHint-typeBackground: rgba(196, 196, 196, 0.3);
+--vscode-editorInlayHint-parameterForeground: #616161;
+--vscode-editorInlayHint-parameterBackground: rgba(196, 196, 196, 0.3);
+--vscode-editorLightBulb-foreground: #ddb100;
+--vscode-editorLightBulbAutoFix-foreground: #007acc;
+--vscode-diffEditor-insertedTextBackground: rgba(156, 204, 44, 0.25);
+--vscode-diffEditor-removedTextBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-insertedLineBackground: rgba(155, 185, 85, 0.2);
+--vscode-diffEditor-removedLineBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-diagonalFill: rgba(34, 34, 34, 0.2);
+--vscode-diffEditor-unchangedRegionBackground: #e4e4e4;
+--vscode-diffEditor-unchangedRegionForeground: #4d4c4c;
+--vscode-diffEditor-unchangedCodeBackground: rgba(184, 184, 184, 0.16);
+--vscode-list-focusOutline: #0090f1;
+--vscode-list-activeSelectionBackground: #0060c0;
+--vscode-list-activeSelectionForeground: #ffffff;
+--vscode-list-inactiveSelectionBackground: #e4e6f1;
+--vscode-list-hoverBackground: #f0f0f0;
+--vscode-list-dropBackground: #d6ebff;
+--vscode-list-highlightForeground: #0066bf;
+--vscode-list-focusHighlightForeground: #bbe7ff;
+--vscode-list-invalidItemForeground: #b89500;
+--vscode-list-errorForeground: #b01011;
+--vscode-list-warningForeground: #855f00;
+--vscode-listFilterWidget-background: #f3f3f3;
+--vscode-listFilterWidget-outline: rgba(0, 0, 0, 0);
+--vscode-listFilterWidget-noMatchesOutline: #be1100;
+--vscode-listFilterWidget-shadow: rgba(0, 0, 0, 0.16);
+--vscode-list-filterMatchBackground: rgba(234, 92, 0, 0.33);
+--vscode-tree-indentGuidesStroke: #a9a9a9;
+--vscode-tree-inactiveIndentGuidesStroke: rgba(169, 169, 169, 0.4);
+--vscode-tree-tableColumnsBorder: rgba(97, 97, 97, 0.13);
+--vscode-tree-tableOddRowsBackground: rgba(97, 97, 97, 0.04);
+--vscode-list-deemphasizedForeground: #8e8e90;
+--vscode-checkbox-background: #ffffff;
+--vscode-checkbox-selectBackground: #f3f3f3;
+--vscode-checkbox-foreground: #616161;
+--vscode-checkbox-border: #cecece;
+--vscode-checkbox-selectBorder: #424242;
+--vscode-quickInputList-focusForeground: #ffffff;
+--vscode-quickInputList-focusBackground: #0060c0;
+--vscode-menu-foreground: #616161;
+--vscode-menu-background: #ffffff;
+--vscode-menu-selectionForeground: #ffffff;
+--vscode-menu-selectionBackground: #0060c0;
+--vscode-menu-separatorBackground: #d4d4d4;
+--vscode-toolbar-hoverBackground: rgba(184, 184, 184, 0.31);
+--vscode-toolbar-activeBackground: rgba(166, 166, 166, 0.31);
+--vscode-editor-snippetTabstopHighlightBackground: rgba(10, 50, 100, 0.2);
+--vscode-editor-snippetFinalTabstopHighlightBorder: rgba(10, 50, 100, 0.5);
+--vscode-breadcrumb-foreground: rgba(97, 97, 97, 0.8);
+--vscode-breadcrumb-background: #f9fafb;
+--vscode-breadcrumb-focusForeground: #4e4e4e;
+--vscode-breadcrumb-activeSelectionForeground: #4e4e4e;
+--vscode-breadcrumbPicker-background: #f3f3f3;
+--vscode-merge-currentHeaderBackground: rgba(64, 200, 174, 0.5);
+--vscode-merge-currentContentBackground: rgba(64, 200, 174, 0.2);
+--vscode-merge-incomingHeaderBackground: rgba(64, 166, 255, 0.5);
+--vscode-merge-incomingContentBackground: rgba(64, 166, 255, 0.2);
+--vscode-merge-commonHeaderBackground: rgba(96, 96, 96, 0.4);
+--vscode-merge-commonContentBackground: rgba(96, 96, 96, 0.16);
+--vscode-editorOverviewRuler-currentContentForeground: rgba(64, 200, 174, 0.5);
+--vscode-editorOverviewRuler-incomingContentForeground: rgba(64, 166, 255, 0.5);
+--vscode-editorOverviewRuler-commonContentForeground: rgba(96, 96, 96, 0.4);
+--vscode-editorOverviewRuler-findMatchForeground: rgba(209, 134, 22, 0.49);
+--vscode-editorOverviewRuler-selectionHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-minimap-findMatchHighlight: #d18616;
+--vscode-minimap-selectionOccurrenceHighlight: #c9c9c9;
+--vscode-minimap-selectionHighlight: #add6ff;
+--vscode-minimap-errorHighlight: rgba(255, 18, 18, 0.7);
+--vscode-minimap-warningHighlight: #bf8803;
+--vscode-minimap-foregroundOpacity: #000000;
+--vscode-minimapSlider-background: rgba(100, 100, 100, 0.2);
+--vscode-minimapSlider-hoverBackground: rgba(100, 100, 100, 0.35);
+--vscode-minimapSlider-activeBackground: rgba(0, 0, 0, 0.3);
+--vscode-problemsErrorIcon-foreground: #e51400;
+--vscode-problemsWarningIcon-foreground: #bf8803;
+--vscode-problemsInfoIcon-foreground: #1a85ff;
+--vscode-charts-foreground: #616161;
+--vscode-charts-lines: rgba(97, 97, 97, 0.5);
+--vscode-charts-red: #e51400;
+--vscode-charts-blue: #1a85ff;
+--vscode-charts-yellow: #bf8803;
+--vscode-charts-orange: #d18616;
+--vscode-charts-green: #388a34;
+--vscode-charts-purple: #652d90;
+--vscode-editor-lineHighlightBackground: #f9fafb;
+--vscode-editor-lineHighlightBorder: #f9fafb;
+--vscode-editor-rangeHighlightBackground: rgba(253, 255, 0, 0.2);
+--vscode-editor-symbolHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editorCursor-foreground: #000000;
+--vscode-editorWhitespace-foreground: rgba(51, 51, 51, 0.2);
+--vscode-editorLineNumber-foreground: #237893;
+--vscode-editorIndentGuide-background: rgba(51, 51, 51, 0.2);
+--vscode-editorIndentGuide-activeBackground: rgba(51, 51, 51, 0.2);
+--vscode-editorIndentGuide-background1: #d3d3d3;
+--vscode-editorIndentGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground1: #939393;
+--vscode-editorIndentGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorActiveLineNumber-foreground: #0b216f;
+--vscode-editorLineNumber-activeForeground: #0b216f;
+--vscode-editorRuler-foreground: #d3d3d3;
+--vscode-editorCodeLens-foreground: #919191;
+--vscode-editorBracketMatch-background: rgba(0, 100, 0, 0.1);
+--vscode-editorBracketMatch-border: #b9b9b9;
+--vscode-editorOverviewRuler-border: rgba(127, 127, 127, 0.3);
+--vscode-editorGutter-background: #f9fafb;
+--vscode-editorUnnecessaryCode-opacity: rgba(0, 0, 0, 0.47);
+--vscode-editorGhostText-foreground: rgba(0, 0, 0, 0.47);
+--vscode-editorOverviewRuler-rangeHighlightForeground: rgba(0, 122, 204, 0.6);
+--vscode-editorOverviewRuler-errorForeground: rgba(255, 18, 18, 0.7);
+--vscode-editorOverviewRuler-warningForeground: #bf8803;
+--vscode-editorOverviewRuler-infoForeground: #1a85ff;
+--vscode-editorBracketHighlight-foreground1: #0431fa;
+--vscode-editorBracketHighlight-foreground2: #319331;
+--vscode-editorBracketHighlight-foreground3: #7b3814;
+--vscode-editorBracketHighlight-foreground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground6: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-unexpectedBracket-foreground: rgba(255, 18, 18, 0.8);
+--vscode-editorBracketPairGuide-background1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorUnicodeHighlight-border: #cea33d;
+--vscode-editorUnicodeHighlight-background: rgba(206, 163, 61, 0.08);
+--vscode-diffEditor-move-border: rgba(139, 139, 139, 0.61);
+--vscode-editorOverviewRuler-bracketMatchForeground: #a0a0a0;
+--vscode-symbolIcon-arrayForeground: #616161;
+--vscode-symbolIcon-booleanForeground: #616161;
+--vscode-symbolIcon-classForeground: #d67e00;
+--vscode-symbolIcon-colorForeground: #616161;
+--vscode-symbolIcon-constantForeground: #616161;
+--vscode-symbolIcon-constructorForeground: #652d90;
+--vscode-symbolIcon-enumeratorForeground: #d67e00;
+--vscode-symbolIcon-enumeratorMemberForeground: #007acc;
+--vscode-symbolIcon-eventForeground: #d67e00;
+--vscode-symbolIcon-fieldForeground: #007acc;
+--vscode-symbolIcon-fileForeground: #616161;
+--vscode-symbolIcon-folderForeground: #616161;
+--vscode-symbolIcon-functionForeground: #652d90;
+--vscode-symbolIcon-interfaceForeground: #007acc;
+--vscode-symbolIcon-keyForeground: #616161;
+--vscode-symbolIcon-keywordForeground: #616161;
+--vscode-symbolIcon-methodForeground: #652d90;
+--vscode-symbolIcon-moduleForeground: #616161;
+--vscode-symbolIcon-namespaceForeground: #616161;
+--vscode-symbolIcon-nullForeground: #616161;
+--vscode-symbolIcon-numberForeground: #616161;
+--vscode-symbolIcon-objectForeground: #616161;
+--vscode-symbolIcon-operatorForeground: #616161;
+--vscode-symbolIcon-packageForeground: #616161;
+--vscode-symbolIcon-propertyForeground: #616161;
+--vscode-symbolIcon-referenceForeground: #616161;
+--vscode-symbolIcon-snippetForeground: #616161;
+--vscode-symbolIcon-stringForeground: #616161;
+--vscode-symbolIcon-structForeground: #616161;
+--vscode-symbolIcon-textForeground: #616161;
+--vscode-symbolIcon-typeParameterForeground: #616161;
+--vscode-symbolIcon-unitForeground: #616161;
+--vscode-symbolIcon-variableForeground: #007acc;
+--vscode-peekViewTitle-background: #f3f3f3;
+--vscode-peekViewTitleLabel-foreground: #000000;
+--vscode-peekViewTitleDescription-foreground: #616161;
+--vscode-peekView-border: #1a85ff;
+--vscode-peekViewResult-background: #f3f3f3;
+--vscode-peekViewResult-lineForeground: #646465;
+--vscode-peekViewResult-fileForeground: #1e1e1e;
+--vscode-peekViewResult-selectionBackground: rgba(51, 153, 255, 0.2);
+--vscode-peekViewResult-selectionForeground: #6c6c6c;
+--vscode-peekViewEditor-background: #f2f8fc;
+--vscode-peekViewEditorGutter-background: #f2f8fc;
+--vscode-peekViewEditorStickyScroll-background: #f2f8fc;
+--vscode-peekViewResult-matchHighlightBackground: rgba(234, 92, 0, 0.3);
+--vscode-peekViewEditor-matchHighlightBackground: rgba(245, 216, 2, 0.87);
+--vscode-editorMarkerNavigationError-background: #e51400;
+--vscode-editorMarkerNavigationError-headerBackground: rgba(229, 20, 0, 0.1);
+--vscode-editorMarkerNavigationWarning-background: #bf8803;
+--vscode-editorMarkerNavigationWarning-headerBackground: rgba(191, 136, 3, 0.1);
+--vscode-editorMarkerNavigationInfo-background: #1a85ff;
+--vscode-editorMarkerNavigationInfo-headerBackground: rgba(26, 133, 255, 0.1);
+--vscode-editorMarkerNavigation-background: #f9fafb;
+--vscode-editor-foldBackground: rgba(173, 214, 255, 0.3);
+--vscode-editorGutter-foldingControlForeground: #424242;
+--vscode-editorSuggestWidget-background: #f3f3f3;
+--vscode-editorSuggestWidget-border: #c8c8c8;
+--vscode-editorSuggestWidget-foreground: #000000;
+--vscode-editorSuggestWidget-selectedForeground: #ffffff;
+--vscode-editorSuggestWidget-selectedBackground: #0060c0;
+--vscode-editorSuggestWidget-highlightForeground: #0066bf;
+--vscode-editorSuggestWidget-focusHighlightForeground: #bbe7ff;
+--vscode-editorSuggestWidgetStatus-foreground: rgba(0, 0, 0, 0.5);
+--vscode-editor-linkedEditingBackground: rgba(255, 0, 0, 0.3);
+--vscode-editor-wordHighlightBackground: rgba(87, 87, 87, 0.25);
+--vscode-editor-wordHighlightStrongBackground: rgba(14, 99, 156, 0.25);
+--vscode-editor-wordHighlightTextBackground: rgba(87, 87, 87, 0.25);
+--vscode-editorOverviewRuler-wordHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(192, 160, 192, 0.8);
+--vscode-editorOverviewRuler-wordHighlightTextForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorHoverWidget-highlightForeground: #0066bf; }
+
+.mtk1 { color: #000000; }
+.mtk2 { color: #f9fafb; }
+.mtk3 { color: #808080; }
+.mtk4 { color: #ff0000; }
+.mtk5 { color: #0451a5; }
+.mtk6 { color: #0000ff; }
+.mtk7 { color: #098658; }
+.mtk8 { color: #008000; }
+.mtk9 { color: #dd0000; }
+.mtk10 { color: #383838; }
+.mtk11 { color: #cd3131; }
+.mtk12 { color: #863b00; }
+.mtk13 { color: #af00db; }
+.mtk14 { color: #800000; }
+.mtk15 { color: #e00000; }
+.mtk16 { color: #3030c0; }
+.mtk17 { color: #666666; }
+.mtk18 { color: #778899; }
+.mtk19 { color: #c700c7; }
+.mtk20 { color: #a31515; }
+.mtk21 { color: #4f76ac; }
+.mtk22 { color: #008080; }
+.mtk23 { color: #001188; }
+.mtk24 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }
+.mtks { text-decoration: line-through; }
+.mtks.mtku { text-decoration: underline line-through; text-underline-position: under; }</style></head>
+<body class="vsc-initialized"><div id="__nuxt" data-v-app=""><div class="_layout_1dh5a_12"><!----><div class="_header_1dh5a_22"><div class="ozi__header__header__2OrLF ozi-body-500 ozi__header__theming__2OrLF _header_cm90b_5"><div class="ozi__header__container__2OrLF"><div class="ozi__header__topContent__2OrLF"><a href="https://techpoint.ozon.ru/" class="ozi__link__link__5CJtw ozi__link-common__onLight__QaR0v ozi__link-common__primary__QaR0v _logoWrapper_cm90b_83"><img class="_logo_cm90b_78" src="./task-04_files/logo.png" alt="Логотип"></a><div class="ozi__header__bar__2OrLF"><div style="display: inline-block;"><div class="ozi__popover__fixReferenceSize__xaASc" aria-expanded="false"><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l" type="submit"><div class="ozi__button__content__S9e0l"><!----><div class="ozi__truncate__truncate__7a-6_ ozi__button__text__S9e0l"><div class="ozi__data-content__dataContent__tXF2r ozi__data-content__size-500__tXF2r ozi__data-content__light__tXF2r _userName_cm90b_15 ozi-table-500"><!----><div class="ozi__truncate__truncate__7a-6_ ozi__data-content__label__tXF2r ozi__data-content__label-size-500__tXF2r ozi-table-500">witty_rooster_3302</div><!----></div></div><!----></div><!----></button></div></div><div><div class="ozi__avatar__container__XqVrv ozi__avatar__size-400__XqVrv ozi-body-300"><div class="ozi__avatar__avatar__XqVrv"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 16 16"><path fill="currentColor" d="M4.25 9.667C5.5 9.67 5.5 10.5 8 10.5s2.5-.833 3.75-.833c.833 0 2.917 2.083 2.917 2.916 0 .834-2.098 2.917-6.674 2.917s-6.66-2.083-6.66-2.917 2.084-2.92 2.917-2.916M8 .5C5.5.5 3.833 2.167 3.833 4.667S5.5 8.833 8 8.833s4.167-1.666 4.167-4.166S10.5.5 8 .5"></path></svg></div><!----><!----></div></div><div class="ozi__header__separator__2OrLF"></div><!----><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l ozi__button__noContent__S9e0l _icon_cm90b_1" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-label="Выход"><path fill="currentColor" d="M18.818 4.248C16.575 3.325 12.848 2.103 12.5 4c0 0-.074.295-.165 1h-1.4c-.887 0-1.651 0-2.263.082-.655.088-1.284.287-1.793.797-.51.51-.709 1.138-.797 1.793C6 8.284 6 9.048 6 9.934V11H4.414l.293-.293a1 1 0 1 0-1.414-1.414l-2 2a1 1 0 0 0 0 1.414l2 2a1 1 0 0 0 1.414-1.414L4.414 13H9a1 1 0 1 0 0-2H8v-1c0-.971.002-1.599.064-2.061.059-.434.153-.57.229-.646s.212-.17.646-.229C9.4 7.002 10.029 7 11 7h1.146A75 75 0 0 0 12 12c0 2.21.05 3.825.118 5H9a1 1 0 0 1-1-1v-1a1 1 0 1 0-2 0v1a3 3 0 0 0 3 3h3.294c.109.822.206 1.015.206 1 .347 1.896 4.071.676 6.314-.246.78-.321 1.17-.481 1.5-.923s.373-.848.457-1.658c.118-1.13.229-2.823.229-5.18 0-2.354-.111-4.042-.229-5.17-.084-.808-.126-1.211-.456-1.653s-.72-.602-1.497-.922"></path></svg><!----><!----></div><!----></button></div></div><!----></div></div><div></div><div></div></div><main class="_main_1dh5a_26 _desktopMain_1dh5a_58"><!----><div class="_defaultPage_1dh5a_27"><div><section class="_taskCardWrapper_tb1y2_1"><div><div><div class="_flexWrapper_u7uo6_1 _taskNavWrapper_u7uo6_6"><nav class="ozi__breadcrumbs__breadcrumbs__DsxCI _breadcrumbs_u7uo6_14"><div class="ozi__breadcrumbs__breadcrumb__DsxCI"><a href="https://techpoint.ozon.ru/" class="ozi__breadcrumb__breadcrumb__o4nBC"><div class="ozi__breadcrumb-content__breadcrumbContent__PKDFH ozi__breadcrumb-content__hoverable__PKDFH"><!----><div class="ozi__breadcrumb-content__label__PKDFH ozi-body-500">Контесты</div></div></a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ozi__breadcrumbs__separator__DsxCI" viewBox="0 0 16 16"><path fill="currentColor" d="M6.293 3.293a1 1 0 0 0 0 1.414L9.586 8l-3.293 3.293a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.414l-4-4a1 1 0 0 0-1.414 0"></path></svg></div><div class="ozi__breadcrumbs__breadcrumb__DsxCI"><a href="https://techpoint.ozon.ru/contest/56" class="ozi__breadcrumb__breadcrumb__o4nBC"><div class="ozi__breadcrumb-content__breadcrumbContent__PKDFH ozi__breadcrumb-content__hoverable__PKDFH"><!----><div class="ozi__breadcrumb-content__label__PKDFH ozi-body-500">Основной раунд Route 256 для сотрудников: Middle Go-разработчик (Май 2024)</div></div></a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ozi__breadcrumbs__separator__DsxCI" viewBox="0 0 16 16"><path fill="currentColor" d="M6.293 3.293a1 1 0 0 0 0 1.414L9.586 8l-3.293 3.293a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.414l-4-4a1 1 0 0 0-1.414 0"></path></svg></div><div class="ozi__breadcrumbs__breadcrumb__DsxCI"><a href="https://techpoint.ozon.ru/contest/56/task/278?tab=conditions#" class="ozi__breadcrumb__breadcrumb__o4nBC"><div class="ozi__breadcrumb-content__breadcrumbContent__PKDFH ozi__breadcrumb-content__hoverable__PKDFH"><!----></div></a><!----></div></nav><div class="_flexWrapper_u7uo6_1 _supportChatAndTasksNavigationWrapper_u7uo6_28"><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M2.167 7.167c.14-1.515.711-2.659 1.526-3.474C4.65 2.738 6.083 2.167 8 2.167c1.916 0 3.351.571 4.307 1.526.814.815 1.387 1.96 1.526 3.474-2.681 0-3.044 1.396-3.274 2.28l-.059.22c-.422 1.472-.092 2.967 1.753 3.275-.502.58-1.09.891-1.753.891a.833.833 0 0 0 0 1.667c1.926 0 3.188-1.388 3.922-2.857C15.165 11.159 15.5 9.362 15.5 8c0-2.25-.678-4.149-2.015-5.485C12.15 1.178 10.25.5 8 .5s-4.149.678-5.485 2.015C1.178 3.85.5 5.75.5 8c0 1.681.833 5 2.5 5 2.5 0 2.973-1.681 2.5-3.333l-.059-.22c-.23-.884-.593-2.28-3.274-2.28"></path><path fill="currentColor" d="M8.833 14.667a.833.833 0 1 1-1.666 0 .833.833 0 0 1 1.666 0"></path></svg><div class="ozi__truncate__truncate__7a-6_ ozi__button__text__S9e0l">Чат с поддержкой</div><!----></div><!----></button><div class="_flexWrapper_u7uo6_1 _tasksNavigationWrapper_u7uo6_32"><div><div class="ozi__popover__fixReferenceSize__xaASc" aria-expanded="false"><button class="ozi__button__button__S9e0l ozi__button__size-400__S9e0l ozi-body-500-true ozi__button__secondary__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l _icon_u7uo6_24" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M7.583 2.583a1.25 1.25 0 0 0 0 2.5h5.834a1.25 1.25 0 0 0 0-2.5zm0 4.167a1.25 1.25 0 0 0 0 2.5h5.834a1.25 1.25 0 0 0 0-2.5zm-5 4.167a1.25 1.25 0 0 0 0 2.5h10.834a1.25 1.25 0 0 0 0-2.5zm2.084-7.5a.833.833 0 0 0-1.423-.59L1.577 4.494a.833.833 0 1 0 1.179 1.179L3 5.429v2.988a.833.833 0 1 0 1.667 0z"></path></svg><div class="ozi__truncate__truncate__7a-6_ ozi__button__text__S9e0l">Список задач</div><!----></div><!----></button></div></div><div class="_flexWrapper_u7uo6_1"><button class="ozi__button__button__S9e0l ozi__button__size-400__S9e0l ozi-body-500-true ozi__button__secondary__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noRightRadius__S9e0l ozi__button__noContent__S9e0l _icon_u7uo6_24" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 16 16"><path fill="currentColor" d="M10.346 3.414a1.25 1.25 0 0 1-.093 1.765L7.119 8l3.134 2.82a1.25 1.25 0 0 1-1.673 1.86L4.414 8.93a1.25 1.25 0 0 1 0-1.86L8.58 3.32a1.25 1.25 0 0 1 1.766.094"></path></svg><!----><!----></div><!----></button><button class="ozi__button__button__S9e0l ozi__button__size-400__S9e0l ozi-body-500-true ozi__button__secondary__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noContent__S9e0l _icon_u7uo6_24" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 16 16"><path fill="currentColor" d="M5.65 3.414a1.25 1.25 0 0 0 .094 1.765L8.878 8l-3.134 2.82a1.25 1.25 0 1 0 1.672 1.86l4.167-3.75a1.25 1.25 0 0 0 0-1.86L7.416 3.32a1.25 1.25 0 0 0-1.765.094"></path></svg><!----><!----></div><!----></button></div></div></div></div></div><div class="_headerWrapper_tb1y2_51"><div class="_taskTitleWrapper_tb1y2_59"><h1 class="_taskTitle_tb1y2_19 ozi-heading-600"><span> 4 </span><div class="_separator_tb1y2_12"></div><span>Три банка, три валюты</span></h1><!----><div class="_taskStatusAndPoints_tb1y2_44"><div><div class="ozi__badge__badge__DuK20 ozi__badge__size-500__DuK20 ozi-body-400-true ozi__badge__secondary__DuK20 ozi__badge__neutral__DuK20 _notStart_mwfnv_1"><!----><div class="ozi__truncate__truncate__7a-6_ ozi__badge__label__DuK20">Новая</div><!----><!----></div></div><div class="_badgesWrapper_1gkio_1"><div><div class="ozi__popover__fixReferenceSize__xaASc"><div class="_wrapper_1gkio_6 ozi-body-500"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="_icon_1gkio_28" viewBox="0 0 16 16"><path fill="currentColor" d="M3.5 4.667C3.5 2.167 5.167.5 7.667.5s4.166 1.667 4.166 4.167-1.666 4.166-4.166 4.166S3.5 7.167 3.5 4.667m1.59 5.311c-.353-.167-.657-.31-1.173-.311C3.083 9.664 1 11.75 1 12.583c0 .834 2.083 2.917 6.66 2.917q.128 0 .255-.002c1.869-.035 2.252-.5 2.252-2.498 0-1.525.446-2.157 1.666-2.386.606-.114.723-.947-.416-.947-.518 0-.821.143-1.177.31-.502.237-1.109.523-2.573.523-1.467 0-2.073-.285-2.576-.522"></path><path fill="currentColor" d="M14.78 11.234a.662.662 0 0 1 1.01 0 .87.87 0 0 1 0 1.132l-2.142 2.4a.66.66 0 0 1-1.01 0l-1.429-1.6a.87.87 0 0 1 0-1.132.662.662 0 0 1 1.01 0l.924 1.035z"></path></svg>10</div></div></div><div><div class="ozi__popover__fixReferenceSize__xaASc"><div class="_wrapper_1gkio_6 ozi-body-500"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="_icon_1gkio_28" viewBox="0 0 16 16"><path fill="currentColor" d="M8.002 10.5c-1.625 0-2.838-.215-3.637-1.028-.966-.133-1.777-.357-2.429-.748C.452 7.834.092 6.276.006 4.288-.023 3.65.037 2.924.592 2.49a1.53 1.53 0 0 1 .76-.298 5 5 0 0 1 .608-.026h1.243c0-1.25.4-1.667 1.6-1.667H11.2c1.2 0 1.6.417 1.6 1.667h1.238c.182 0 .404 0 .608.026.217.029.501.096.76.298.556.433.615 1.16.588 1.797-.087 1.988-.447 3.546-1.931 4.436-.65.39-1.46.614-2.424.748-.8.813-2.012 1.028-3.638 1.028m4.57-2.922c.28-.087.507-.187.694-.299.714-.428 1.048-1.162 1.13-3.067a2.5 2.5 0 0 0-.005-.37 5 5 0 0 0-.372-.009H12.8v1.25c0 1-.076 1.822-.229 2.495M3.204 5.084v-1.25H1.98a5 5 0 0 0-.372.007 2.5 2.5 0 0 0-.006.371c.083 1.905.417 2.64 1.131 3.067.188.113.417.213.698.3-.152-.673-.228-1.495-.228-2.495m.965 9.166c.402-1.253.77-1.252 1.857-1.25h.378v-1.335c-.002-.403-.002-.415.431-.377.379.033.77.045 1.168.045.41 0 .811-.012 1.2-.048.404-.037.404-.007.4.347V13h.24c1.201 0 1.602 0 2.002 1.25s0 1.25-.8 1.25H4.871c-.737.002-1.105.003-.704-1.25"></path></svg><span class="">20</span></div></div></div></div></div></div><div><div class="ozi__informer__informer__HzSFx ozi-body-500 ozi__informer__size-500__HzSFx ozi__informer__alert__HzSFx _timerInformer_1yccm_13"><div class="_timerWrapper_1yccm_1 ozi-body-500"><span class="_timerLabel_1yccm_20 ozi-body-500">Осталось</span><span class="_time_1yccm_1 ozi-body-500-true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_alert_1yccm_42"><path fill="currentColor" d="M12 21c5.584 0 9-3.416 9-9s-3.416-9-9-9-9 3.416-9 9 3.416 9 9 9M11 8a1 1 0 1 1 2 0v4a1 1 0 1 1-2 0zm2 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"></path></svg>00 : 05</span><span class="_timerLabel_1yccm_20 ozi-body-500">Дедлайн</span><span class="_date_1yccm_36 ozi-body-500">05 мая,&nbsp;17:00 мск</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ozi__icon__cursor__pvBjg ozi__informer__closeIcon__HzSFx" viewBox="0 0 24 24"><path fill="currentColor" d="M6.293 6.293a1 1 0 0 1 1.414 0L12 10.586l4.293-4.293a1 1 0 1 1 1.414 1.414L13.414 12l4.293 4.293a1 1 0 0 1-1.414 1.414L12 13.414l-4.293 4.293a1 1 0 0 1-1.414-1.414L10.586 12 6.293 7.707a1 1 0 0 1 0-1.414"></path></svg></div></div></div></div><div class="_mainInfoWrapper_tb1y2_63"><div class="_leftContent_tb1y2_72"><div class="ozi__tabs__tabs__KWPi7 ozi__tabs__size-500__KWPi7 ozi__tabs__light__KWPi7 ozi__tabs__underline__KWPi7"><button type="button" class="ozi__tab__tab__w-hfy"><div class="ozi__data-cell__dataCell__QUywL ozi__tab-content__tabContent__BJuRc ozi__tab-content__size-500__BJuRc ozi__tab-content__light__BJuRc ozi__tab-content__active__BJuRc" style="--columns: 1fr;"><!----><div class="ozi__data-cell__content__QUywL"><div class="ozi__data-content__dataContent__tXF2r ozi__data-content__size-500__tXF2r ozi__data-content__light__tXF2r"><!----><div class="ozi__data-content__label__tXF2r ozi__data-content__label-size-500__tXF2r ozi-table-500">Условие задачи</div><!----></div></div><!----></div></button><button type="button" class="ozi__tab__tab__w-hfy"><div class="ozi__data-cell__dataCell__QUywL ozi__tab-content__tabContent__BJuRc ozi__tab-content__size-500__BJuRc ozi__tab-content__light__BJuRc" style="--columns: 1fr;"><!----><div class="ozi__data-cell__content__QUywL"><div class="ozi__data-content__dataContent__tXF2r ozi__data-content__size-500__tXF2r ozi__data-content__light__tXF2r"><!----><div class="ozi__data-content__label__tXF2r ozi__data-content__label-size-500__tXF2r ozi-table-500">Мои посылки</div><!----></div></div><!----></div></button></div><div class="_conditionsWrapper_hlsy1_19 _tabComponent_tb1y2_78"><ul class="_conditionsMetaInfo_21uei_1 _conditionBox_21uei_9"><li class="_metaItem_21uei_23"><div><div class="ozi__popover__fixReferenceSize__xaASc"><div class="_tooltipContent_21uei_27 ozi-body-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_icon_21uei_41" viewBox="0 0 24 24"><path fill="currentColor" d="M19.6 14.3a1.5 1.5 0 0 1 1.8 2.4l-4 3a1.5 1.5 0 0 1-1.8 0l-4-3a1.5 1.5 0 0 1 1.8-2.4l1.6 1.2v-10a1.5 1.5 0 0 1 3 0v10zm-9-4.6a1.5 1.5 0 0 0 1.8-2.4l-4-3a1.5 1.5 0 0 0-1.8 0l-4 3a1.5 1.5 0 1 0 1.8 2.4L6 8.5v10a1.5 1.5 0 0 0 3 0v-10z"></path></svg>Стандартный</div></div></div></li><li class="_metaItem_21uei_23"><div><div class="ozi__popover__fixReferenceSize__xaASc"><div class="_tooltipContent_21uei_27 ozi-body-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_icon_21uei_41" viewBox="0 0 24 24"><path fill="currentColor" d="M10 0a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zm9.707 2.293a1 1 0 1 0-1.414 1.414l1 1a1 1 0 1 0 1.414-1.414z"></path><path fill="currentColor" d="M12 21c5.584 0 9-3.416 9-9s-3.416-9-9-9-9 3.416-9 9 3.416 9 9 9m3.8-12.4-1.96 2.614a2 2 0 1 1-1.6-1.2L14.2 7.4a1 1 0 0 1 1.6 1.2"></path></svg>2,000 Мс</div></div></div></li><li class="_metaItem_21uei_23"><div><div class="ozi__popover__fixReferenceSize__xaASc"><div class="_tooltipContent_21uei_27 ozi-body-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_icon_21uei_41" viewBox="0 0 24 24"><path fill="currentColor" d="M8 2a1 1 0 0 1 1 1v1h2V3a1 1 0 1 1 2 0v1h2V3a1 1 0 1 1 2 0v1a3 3 0 0 1 3 3h1a1 1 0 1 1 0 2h-1v2h1a1 1 0 1 1 0 2h-1v2h1a1 1 0 1 1 0 2h-1a3 3 0 0 1-3 3v1a1 1 0 1 1-2 0v-1h-2v1a1 1 0 1 1-2 0v-1H9v1a1 1 0 1 1-2 0v-1a3 3 0 0 1-3-3H3a1 1 0 1 1 0-2h1v-2H3a1 1 0 1 1 0-2h1V9H3a1 1 0 0 1 0-2h1a3 3 0 0 1 3-3V3a1 1 0 0 1 1-1m9 16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1z"></path><path fill="currentColor" d="M9.293 8.293A1 1 0 0 1 10 8h4a1 1 0 0 1 .707.293l1 1A1 1 0 0 1 16 10v4a1 1 0 0 1-.293.707l-1 1A1 1 0 0 1 14 16h-4a1 1 0 0 1-.707-.293l-1-1A1 1 0 0 1 8 14v-4a1 1 0 0 1 .293-.707zM10.414 10l-.414.414v3.172l.414.414h3.172l.414-.414v-3.172L13.586 10z"></path></svg>256 Мб</div></div></div></li></ul><section class="_katexBoxWrapper_r6teb_8 _conditionBox_r6teb_1"><h2 class="_katexLabel_r6teb_23 ozi-heading-400">Условие задачи<div><div class="ozi__popover__fixReferenceSize__xaASc"><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l ozi__button__noContent__S9e0l _toFullSizeButton_r6teb_37" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="currentColor" d="M11 5.5A1.5 1.5 0 0 1 12.5 4h6A1.5 1.5 0 0 1 20 5.5v6a1.5 1.5 0 0 1-3 0V7h-4.5A1.5 1.5 0 0 1 11 5.5m2 13a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 4 18.5v-6a1.5 1.5 0 0 1 3 0V17h4.5a1.5 1.5 0 0 1 1.5 1.5"></path></svg><!----><!----></div><!----></button></div></div></h2><div class="_katexBox_r6teb_8 ozi-body-600">Банки A, B и C предлагают обмен валюты.
+
+Каждый банк меняет рубли, доллары и евро по своему курсу. В каждый банк можно обратиться только 1 раз. Одно обращение — это одна операция обмена валюты. В одном банке нельзя совершить несколько операций обмена валют.
+
+Вам нужно обменять 1 рубль в максимально возможное количество долларов.</div></section><div class="_conditionsMetaInfo_1pnpw_1 _conditionBox_1pnpw_10"><span class="_testsDownloadTitle_1pnpw_22 ozi-heading-400">Набор тестов</span><a href="https://cdn1.ozonusercontent.com/s3/test-examples-taskbook-api/278.zip" download="" class="_archiveUrl_1pnpw_31"><button class="ozi__button__button__S9e0l ozi__button__size-400__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l" type="submit"><div class="ozi__button__content__S9e0l"><!----><div class="ozi__truncate__truncate__7a-6_ ozi__button__text__S9e0l">Скачать</div><!----></div><!----></button></a></div><section class="_katexBoxWrapper_r6teb_8 _conditionBox_r6teb_1"><h2 class="_katexLabel_r6teb_23 ozi-heading-400">Входные данные<!----></h2><div class="_katexBox_r6teb_8 ozi-body-600">Каждый тест состоит из нескольких наборов входных данных.
+
+Первая строка содержит целое число <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span></span></span> <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>10000</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1 \le t \le 10000)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.7719em; vertical-align: -0.136em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">10000</span><span class="mclose">)</span></span></span></span></span></span> — количество наборов входных данных.
+
+Далее следуют описания наборов входных данных.
+
+Каждый набор входных данных содержит описания обменных курсов трех банков.
+
+Описание обменного курса одного банка состоит из шести строк, каждая из которых содержит по два целых числа <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span></span> <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>100</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1 \le n \le 100)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.7719em; vertical-align: -0.136em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">100</span><span class="mclose">)</span></span></span></span></span></span> и <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span></span></span> <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>≤</mo><mi>m</mi><mo>≤</mo><mn>100</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1 \le m \le 100)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.7719em; vertical-align: -0.136em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">100</span><span class="mclose">)</span></span></span></span></span></span> — курс обмена одной валюты на другую:
+
+<span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∙</mo></mrow><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4445em;"></span><span class="mord">∙</span></span></span></span></span></span> Курс обмена рублей на доллары. 
+<span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∙</mo></mrow><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4445em;"></span><span class="mord">∙</span></span></span></span></span></span> Курс обмена рублей на евро. 
+<span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∙</mo></mrow><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4445em;"></span><span class="mord">∙</span></span></span></span></span></span> Курс обмена долларов на рубли. 
+<span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∙</mo></mrow><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4445em;"></span><span class="mord">∙</span></span></span></span></span></span> Курс обмена долларов на евро. 
+<span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∙</mo></mrow><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4445em;"></span><span class="mord">∙</span></span></span></span></span></span> Курс обмена евро на рубли. 
+<span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∙</mo></mrow><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4445em;"></span><span class="mord">∙</span></span></span></span></span></span> Курс обмена евро на доллары. </div></section><section class="_katexBoxWrapper_r6teb_8 _conditionBox_r6teb_1"><h2 class="_katexLabel_r6teb_23 ozi-heading-400">Выходные данные<!----></h2><div class="_katexBox_r6teb_8 ozi-body-600">Для каждого набора входных данных в отдельной строке выведите одно число — максимальное количество долларов, которое можно получить, если совершать не больше одного обмена в банке. Ответ будет считаться правильным, если его относительная или абсолютная погрешность от верного не превосходит <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{-6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.8641em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8641em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span></span></span></span>.</div></section><ul class="_examplesWrapper_etu41_10"><li class="_singleExampleWrapper_etu41_20 _singleExampleWrapperWithBorder_etu41_25"><h3 class="_examplesTitle_etu41_32 ozi-heading-400">Пример теста 1</h3><div class="_labelWrapper_etu41_67"><h4 class="_exampleLabel_etu41_50 ozi-body-500-true">Входные данные</h4><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l ozi__button__noContent__S9e0l _copyBtn_etu41_96" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_copyIcon_etu41_74"><path fill="currentColor" d="M4 10c0-4.941 1.059-6 6-6s6 1.059 6 6-1.059 6-6 6-6-1.059-6-6"></path><path fill="currentColor" d="M10 17c-.5 0-1 .5-1 1 0 2 3.898 2 5 2 4.941 0 6-1.059 6-6 0-1.102 0-5-2-5-.53.042-1 .5-1 1 0 5.5-1.5 7-7 7"></path></svg><!----><!----></div><!----></button></div><div class="_exampleData_etu41_57">1
+100 1
+100 1
+1 100
+3 2
+1 100
+2 3
+100 1
+100 1
+1 100
+3 2
+1 100
+2 3
+100 1
+100 1
+1 100
+3 2
+1 100
+2 3
+</div><div class="_exampleHr_etu41_84"></div><div class="_labelWrapper_etu41_67"><h4 class="_exampleLabel_etu41_50 ozi-body-500-true">Выходные данные</h4><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__uncontained__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasLeftIcon__S9e0l ozi__button__noLeftRadius__S9e0l ozi__button__noRightRadius__S9e0l ozi__button__noContent__S9e0l _copyBtn_etu41_96" type="submit"><div class="ozi__button__content__S9e0l"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_copyIcon_etu41_74"><path fill="currentColor" d="M4 10c0-4.941 1.059-6 6-6s6 1.059 6 6-1.059 6-6 6-6-1.059-6-6"></path><path fill="currentColor" d="M10 17c-.5 0-1 .5-1 1 0 2 3.898 2 5 2 4.941 0 6-1.059 6-6 0-1.102 0-5-2-5-.53.042-1 .5-1 1 0 5.5-1.5 7-7 7"></path></svg><!----><!----></div><!----></button></div><div class="_exampleData_etu41_57">0.015
+</div></li></ul></div></div><div class="_editCodeWrapper_13zbz_24 _editCodeWrapper_tb1y2_73"><div class="_codeHeader_13zbz_1"><h2 class="_label_13zbz_7 ozi-heading-200">Решение</h2><div><div class="ozi__popover__fixReferenceSize__xaASc" aria-expanded="false"><button class="ozi__button__button__S9e0l ozi__button__size-400__S9e0l ozi-body-500-true ozi__button__secondary__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l ozi__button__hasRightIcon__S9e0l" type="submit"><div class="ozi__button__content__S9e0l"><!----><div class="ozi__truncate__truncate__7a-6_ ozi__button__text__S9e0l">Go 1.19</div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="currentColor" d="M7.293 11.707a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L8 9.586 4.707 6.293a1 1 0 0 0-1.414 1.414z"></path></svg></div><!----></button></div></div></div><!----><div class="_container_13zbz_105" data-keybinding-context="2" data-mode-id="go" style="--vscode-editorCodeLens-lineHeight: 16px; --vscode-editorCodeLens-fontSize: 12px; --vscode-editorCodeLens-fontFeatureSettings: &quot;liga&quot; off, &quot;calt&quot; off;"><div class="monaco-editor no-user-select  showUnused showDeprecated vs" role="code" data-uri="inmemory://model/2" style="width: 589px; height: 854px;"><div data-mprt="3" class="overflow-guard" style="width: 589px; height: 854px;"><div class="margin" role="presentation" aria-hidden="true" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; height: 854px; width: 87px;"><div class="glyph-margin" style="left: 0px; width: 19px; height: 854px;"></div><div class="margin-view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="margin-view-overlays" role="presentation" aria-hidden="true" style="position: absolute; font-family: &quot;Droid Sans Mono&quot;, &quot;monospace&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; width: 87px; height: 854px;"><div style="position:absolute;top:0px;width:100%;height:19px;"><div class="current-line current-line-margin-both" style="width:87px; height:19px;"></div><div class="cldr codicon codicon-folding-expanded" style="left:61px;width:26px;"></div><div class="line-numbers lh-odd active-line-number" style="left:19px;width:42px;">1</div></div><div style="position:absolute;top:19px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">2</div></div><div style="position:absolute;top:38px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">3</div></div><div style="position:absolute;top:57px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">4</div></div><div style="position:absolute;top:76px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">5</div></div><div style="position:absolute;top:95px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">6</div></div><div style="position:absolute;top:114px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">7</div></div><div style="position:absolute;top:133px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">8</div></div><div style="position:absolute;top:152px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">9</div></div><div style="position:absolute;top:171px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">10</div></div><div style="position:absolute;top:190px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">11</div></div><div style="position:absolute;top:209px;width:100%;height:19px;"><div class="line-numbers lh-odd" style="left:19px;width:42px;">12</div></div></div><div class="glyph-margin-widgets" style="position: absolute; top: 0px;"></div></div><div class="monaco-scrollable-element editor-scrollable vs" role="presentation" data-mprt="5" style="position: absolute; overflow: hidden; left: 87px; width: 502px; height: 854px;"><div class="lines-content monaco-editor-background" style="position: absolute; overflow: hidden; width: 1e+06px; height: 1e+06px; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; left: 0px;"><div class="view-overlays" role="presentation" aria-hidden="true" style="position: absolute; font-family: &quot;Droid Sans Mono&quot;, &quot;monospace&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; height: 0px; width: 593px;"><div style="position:absolute;top:0px;width:100%;height:19px;"><div class="current-line" style="width:593px; height:19px;"></div></div><div style="position:absolute;top:19px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 vertical" style="left:0px;height:19px;width:8.3984375px"></div></div><div style="position:absolute;top:38px;width:100%;height:19px;"></div><div style="position:absolute;top:57px;width:100%;height:19px;"></div><div style="position:absolute;top:76px;width:100%;height:19px;"></div><div style="position:absolute;top:95px;width:100%;height:19px;"></div><div style="position:absolute;top:114px;width:100%;height:19px;"></div><div style="position:absolute;top:133px;width:100%;height:19px;"></div><div style="position:absolute;top:152px;width:100%;height:19px;"></div><div style="position:absolute;top:171px;width:100%;height:19px;"></div><div style="position:absolute;top:190px;width:100%;height:19px;"></div><div style="position:absolute;top:209px;width:100%;height:19px;"></div></div><div role="presentation" aria-hidden="true" class="view-rulers"></div><div class="view-zones" role="presentation" aria-hidden="true" style="position: absolute;"></div><div class="view-lines monaco-mouse-cursor-text" role="presentation" aria-hidden="true" data-mprt="7" style="position: absolute; font-family: &quot;Droid Sans Mono&quot;, &quot;monospace&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; width: 593px; height: 854px;"><div style="top:0px;height:19px;" class="view-line"><span><span class="mtk8">/*</span></span></div><div style="top:19px;height:19px;" class="view-line"><span><span class="mtk8">&nbsp;Рекомендуется&nbsp;использовать&nbsp;быстрый&nbsp;</span><span class="mtk8">(буферизованный)&nbsp;ввод&nbsp;и&nbsp;вывод</span></span></div><div style="top:38px;height:19px;" class="view-line"><span><span class="mtk8">var&nbsp;in&nbsp;*bufio.Reader</span></span></div><div style="top:57px;height:19px;" class="view-line"><span><span class="mtk8">var&nbsp;out&nbsp;*bufio.Writer</span></span></div><div style="top:76px;height:19px;" class="view-line"><span><span class="mtk8">in&nbsp;=&nbsp;bufio.NewReader(os.Stdin)</span></span></div><div style="top:95px;height:19px;" class="view-line"><span><span class="mtk8">out&nbsp;=&nbsp;bufio.NewWriter(os.Stdout)</span></span></div><div style="top:114px;height:19px;" class="view-line"><span><span class="mtk8">defer&nbsp;out.Flush()</span></span></div><div style="top:133px;height:19px;" class="view-line"><span><span></span></span></div><div style="top:152px;height:19px;" class="view-line"><span><span class="mtk8">var&nbsp;a,&nbsp;b&nbsp;int</span></span></div><div style="top:171px;height:19px;" class="view-line"><span><span class="mtk8">fmt.Fscan(in,&nbsp;&amp;a,&nbsp;&amp;b)</span></span></div><div style="top:190px;height:19px;" class="view-line"><span><span class="mtk8">fmt.Fprint(out,&nbsp;a&nbsp;+&nbsp;b)</span></span></div><div style="top:209px;height:19px;" class="view-line"><span><span class="mtk8">*/</span></span></div></div><div data-mprt="1" class="contentWidgets" style="position: absolute; top: 0px;"></div><div role="presentation" aria-hidden="true" class="cursors-layer cursor-line-style cursor-solid"><div class="cursor monaco-mouse-cursor-text " style="height: 19px; top: 0px; left: 0px; font-family: &quot;Droid Sans Mono&quot;, &quot;monospace&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; display: block; visibility: hidden; padding-left: 0px; width: 1.33333px;"></div></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal fade" style="position: absolute; width: 488px; height: 12px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 12px; transform: translate3d(0px, 0px, 0px); contain: strict; width: 413px;"></div></div><canvas class="decorationsOverviewRuler" aria-hidden="true" width="0" height="0" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; right: 0px; width: 14px; height: 854px; display: none;"></canvas><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute; width: 14px; height: 854px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 14px; transform: translate3d(0px, 0px, 0px); contain: strict; height: 854px;"></div></div></div><div role="presentation" aria-hidden="true" style="width: 589px;"></div><textarea data-mprt="6" class="inputarea monaco-mouse-cursor-text" wrap="off" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" aria-label="Editor content;Press Alt+F1 for Accessibility Options." aria-required="false" tabindex="0" role="textbox" aria-roledescription="editor" aria-multiline="true" aria-haspopup="false" aria-autocomplete="both" style="tab-size: 33.5938px; font-family: &quot;Droid Sans Mono&quot;, &quot;monospace&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; top: 0px; left: 87px; width: 1px; height: 1px;"></textarea><div style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;" class="monaco-editor-background textAreaCover margin"></div><div data-mprt="4" class="overlayWidgets" style="width: 589px;"></div><div data-mprt="8" class="minimap slider-mouseover" role="presentation" aria-hidden="true" style="position: absolute; left: 0px; width: 0px; height: 854px;"><div class="minimap-shadow-hidden" style="height: 854px;"></div><canvas width="0" height="640" style="position: absolute; left: 0px; width: 0px; height: 854px;"></canvas><canvas class="minimap-decorations-layer" width="0" height="640" style="position: absolute; left: 0px; width: 0px; height: 854px;"></canvas><div class="minimap-slider" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; width: 0px;"><div class="minimap-slider-horizontal" style="position: absolute; width: 0px; height: 0px;"></div></div></div><div role="presentation" aria-hidden="true" class="blockDecorations-container"></div></div><div data-mprt="2" class="overflowingContentWidgets"></div></div></div><!----><button class="ozi__button__button__S9e0l ozi__button__size-500__S9e0l ozi-body-500-true ozi__button__primary__S9e0l ozi__button__hug__S9e0l ozi__button__light__S9e0l _sendSolutionBtn_13zbz_29" type="submit"><div class="ozi__button__content__S9e0l"><!----><div class="ozi__truncate__truncate__7a-6_ ozi__button__text__S9e0l">Отправить решение</div><!----></div><!----></button></div></div><div></div></section></div></div><!----></main><footer class="_footer_1k3l7_3 _footer_1dh5a_48"><nav class="_navigation_1k3l7_26"><span class="_ligalText_1k3l7_13 ozi-body-400">© ООО «Озон технологии». Все права защищены, 2024</span><ul class="_list_1k3l7_32"><li class="_listItem_1k3l7_40 _routeTelegramWrapper_1k3l7_46"><button type="button" class="ozi__link-pseudo__linkPseudo__9vjoS ozi__link-common__onLight__QaR0v ozi__link-common__primary__QaR0v _links_1k3l7_51"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_telegramIcon_1k3l7_19" viewBox="0 0 24 24"><path fill="currentColor" d="M3.375 10.888q8.054-3.387 10.74-4.466c5.114-2.053 6.177-2.41 6.87-2.422.152-.002.493.034.713.207a.74.74 0 0 1 .262.481c.025.139.055.454.031.7-.277 2.811-1.476 9.633-2.086 12.781-.259 1.333-.767 1.78-1.259 1.823-1.07.095-1.881-.682-2.917-1.338-1.621-1.025-2.537-1.664-4.11-2.665-1.818-1.156-.64-1.792.396-2.831.272-.272 4.984-4.41 5.075-4.785.011-.047.022-.221-.086-.314-.108-.092-.266-.06-.381-.036q-.244.054-7.768 4.957-1.102.73-1.997.712c-.658-.014-1.923-.359-2.863-.654-1.153-.362-2.07-.553-1.99-1.168q.062-.48 1.37-.982"></path></svg><!----><span class="_listItemText_1k3l7_68 ozi-body-400">Route 256</span></button></li><li class="_listItem_1k3l7_40 _routeTelegramWrapper_1k3l7_46"><button type="button" class="ozi__link-pseudo__linkPseudo__9vjoS ozi__link-common__onLight__QaR0v ozi__link-common__primary__QaR0v _links_1k3l7_51"><!----><svg width="42" height="20" viewBox="0 0 42 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="_footerIcon_1k3l7_77"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.69053 19.9845C6.84325 18.6579 5.31782 18.0045 4.06462 17.4681C2.43338 16.7706 1.26283 16.2695 0.440595 14.7343C-0.496271 12.986 0.247719 11.2508 0.945408 9.62634C1.01854 9.45564 1.10225 9.28552 1.18835 9.11056C1.49806 8.48123 1.83862 7.78919 1.82827 6.78145C1.81614 5.56771 1.30251 4.63884 0.440595 3.83932L1.76764 0.716959C1.76764 0.716959 5.41812 2.10011 8.69053 0.0135739L8.71147 0L8.7335 0.0135739C12.0059 2.10011 15.6564 0.716959 15.6564 0.716959L16.9834 3.83932C16.1215 4.63884 15.6068 5.56771 15.5958 6.78145C15.5854 7.78919 15.926 8.48123 16.2357 9.11057C16.3218 9.28553 16.4055 9.45564 16.4786 9.62634C17.1763 11.2508 17.9203 12.986 16.9834 14.7343C16.1601 16.2695 14.9896 16.7706 13.3583 17.4681L13.3576 17.4684C12.1056 18.0048 10.5804 18.6582 8.7335 19.9845L8.71147 20L8.69053 19.9845ZM8.89595 10.1238C9.11232 10.1238 9.31139 10.0805 9.49315 9.99385C9.6749 9.90724 9.82637 9.79464 9.94754 9.65607C10.0774 9.50883 10.1769 9.33994 10.2461 9.1494C10.3154 8.95886 10.35 8.75966 10.35 8.5518C10.35 8.34393 10.3154 8.14473 10.2461 7.95419C10.1769 7.76365 10.0774 7.59909 9.94754 7.46051C9.82637 7.31328 9.6749 7.19635 9.49315 7.10974C9.31139 7.02314 9.11232 6.97983 8.89595 6.97983H7.45488V10.1238H8.89595ZM5.35169 5.26496H9.16858C9.67058 5.26496 10.125 5.3559 10.5318 5.53778C10.9385 5.711 11.2847 5.94917 11.5704 6.25231C11.8646 6.54678 12.0897 6.89322 12.2455 7.29162C12.4013 7.69003 12.4791 8.11009 12.4791 8.5518C12.4791 9.19271 12.319 9.77732 11.9988 10.3056C11.6872 10.8253 11.2458 11.2194 10.6746 11.4879L12.4921 14.359H10.0514L8.44156 11.8386H7.45488V14.359H5.35169V5.26496ZM19.5656 14.359C19.5656 13.6228 19.6219 13.0035 19.7344 12.5012C19.8556 11.9989 20.0243 11.5745 20.2407 11.228C20.4571 10.8816 20.7081 10.5871 20.9937 10.3446C21.288 10.1021 21.6126 9.87259 21.9674 9.65606C22.2357 9.50016 22.4824 9.35293 22.7074 9.21435C22.9411 9.06712 23.1445 8.91988 23.3176 8.77264C23.4907 8.62541 23.6249 8.46518 23.7201 8.29196C23.8239 8.11008 23.8759 7.90655 23.8759 7.68136C23.8759 7.3176 23.7763 7.05777 23.5773 6.90188C23.3782 6.73732 23.1315 6.65504 22.8372 6.65504C22.5084 6.65504 22.2314 6.75897 22.0064 6.96683C21.79 7.16603 21.6818 7.50381 21.6818 7.98016H19.5916C19.5916 7.56444 19.6608 7.17903 19.7993 6.82393C19.9465 6.46883 20.1585 6.16136 20.4355 5.90153C20.7124 5.6417 21.05 5.43817 21.4481 5.29093C21.8462 5.1437 22.305 5.07008 22.8243 5.07008C23.2397 5.07008 23.6335 5.12638 24.0057 5.23897C24.3865 5.3429 24.7197 5.50746 25.0053 5.73264C25.291 5.94917 25.516 6.23498 25.6804 6.59008C25.8535 6.93652 25.9401 7.34791 25.9401 7.82427C25.9401 8.20535 25.8579 8.55179 25.6934 8.86358C25.529 9.17538 25.3256 9.45253 25.0832 9.69504C24.8496 9.93754 24.5942 10.1541 24.3173 10.3446C24.0403 10.5265 23.7893 10.6824 23.5643 10.8123C23.2527 11.0202 22.993 11.202 22.7853 11.3579C22.5863 11.5052 22.4261 11.6438 22.305 11.7737C22.1838 11.9036 22.0972 12.0378 22.0453 12.1764C22.002 12.315 21.9804 12.4752 21.9804 12.6571H25.8752V14.359H19.5656ZM27.3067 5.26495H33.4475V6.90188H29.2411V8.92854C29.3277 8.78996 29.4402 8.66871 29.5787 8.56478C29.7172 8.46085 29.8686 8.37424 30.0331 8.30495C30.2062 8.23566 30.3793 8.1837 30.5524 8.14905C30.7341 8.11441 30.9116 8.09709 31.0847 8.09709C31.5867 8.09709 32.0237 8.18803 32.3959 8.36991C32.7681 8.54313 33.0753 8.77697 33.3177 9.07145C33.5687 9.36592 33.7547 9.7037 33.8759 10.0848C33.9971 10.4572 34.0577 10.8426 34.0577 11.241C34.0577 11.6914 33.9755 12.1201 33.811 12.5272C33.6552 12.9256 33.4259 13.2763 33.1229 13.5795C32.8287 13.874 32.4651 14.1121 32.0324 14.294C31.5996 14.4672 31.1106 14.5538 30.5654 14.5538C30.0287 14.5538 29.5441 14.4672 29.1113 14.294C28.6872 14.1121 28.3237 13.874 28.0208 13.5795C27.7265 13.2763 27.4971 12.9256 27.3327 12.5272C27.1769 12.1288 27.099 11.7087 27.099 11.267H29.1373C29.1373 11.6914 29.2628 12.0552 29.5138 12.3583C29.7734 12.6614 30.1239 12.813 30.5654 12.813C30.7904 12.813 30.9895 12.774 31.1626 12.6961C31.3443 12.6095 31.4958 12.4969 31.6169 12.3583C31.7468 12.211 31.8463 12.0422 31.9155 11.8516C31.9848 11.6611 32.0194 11.4575 32.0194 11.241C32.0194 11.0332 31.9848 10.8383 31.9155 10.6564C31.855 10.4659 31.7598 10.3013 31.6299 10.1627C31.5088 10.0155 31.3573 9.9029 31.1755 9.82495C31.0024 9.73834 30.8034 9.69504 30.5783 9.69504C30.2668 9.69504 30.0028 9.76433 29.7864 9.9029C29.5787 10.0415 29.4056 10.2493 29.2671 10.5265H27.3067V5.26495ZM37.0666 14.281C37.4994 14.4542 37.984 14.5408 38.5207 14.5408C39.0659 14.5408 39.5506 14.4542 39.9747 14.281C40.4075 14.0991 40.771 13.861 41.0652 13.5665C41.3682 13.2634 41.5975 12.9126 41.7533 12.5142C41.9178 12.1158 42 11.6914 42 11.241C42 10.8513 41.9394 10.4832 41.8182 10.1367C41.6971 9.78165 41.5196 9.46552 41.2859 9.18837C41.0523 8.90256 40.771 8.66871 40.4421 8.48683C40.1132 8.30495 39.741 8.18803 39.3256 8.13606C39.1438 8.06677 38.9621 8.01914 38.7803 7.99316L40.5979 5.26495H38.235L35.6125 9.35726C35.4394 9.63441 35.301 9.93321 35.1971 10.2537C35.1019 10.5655 35.0543 10.8946 35.0543 11.241C35.0543 11.6914 35.1322 12.1158 35.288 12.5142C35.4524 12.9126 35.6818 13.2634 35.9761 13.5665C36.279 13.861 36.6425 14.0991 37.0666 14.281ZM39.1179 12.6701C38.9361 12.748 38.737 12.787 38.5207 12.787C38.0792 12.787 37.7287 12.6354 37.4691 12.3323C37.2181 12.0292 37.0926 11.6654 37.0926 11.241C37.0926 10.808 37.2181 10.4442 37.4691 10.1497C37.7287 9.8466 38.0792 9.69504 38.5207 9.69504C38.737 9.69504 38.9361 9.73834 39.1179 9.82495C39.2996 9.9029 39.4511 10.0112 39.5722 10.1497C39.7021 10.2883 39.8016 10.4529 39.8708 10.6434C39.9401 10.8253 39.9747 11.0245 39.9747 11.241C39.9747 11.4489 39.9401 11.6481 39.8708 11.8386C39.8016 12.0292 39.7021 12.1937 39.5722 12.3323C39.4511 12.4709 39.2996 12.5835 39.1179 12.6701Z" fill="#001122" fill-opacity="0.45"></path></svg><!----></button></li><li class="_listItem_1k3l7_40 _routeTelegramWrapper_1k3l7_46"><button type="button" class="ozi__link-pseudo__linkPseudo__9vjoS ozi__link-common__onLight__QaR0v ozi__link-common__primary__QaR0v _links_1k3l7_51"><!----><svg width="69" height="16" viewBox="0 0 107 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="_footerIcon_1k3l7_77"><g clip-path="url(#clip0_2246_24735)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.95419 6.69694C6.64108 6.56001 5.31789 6.82894 4.16554 7.46645C3.01353 8.10378 2.08896 9.07856 1.51967 10.2566C0.950218 11.435 0.76376 12.7585 0.985831 14.0457C1.20773 15.3331 1.82724 16.5206 2.75954 17.4453C3.69133 18.3704 4.89021 18.9867 6.19089 19.2105C7.49143 19.4339 8.83019 19.2537 10.0229 18.6941C11.2157 18.1344 12.2041 17.2231 12.852 16.0854C13.5001 14.9476 13.7758 13.6394 13.6417 12.34C13.4939 10.8961 12.8477 9.54656 11.8117 8.51885C10.776 7.49096 9.41345 6.84744 7.95419 6.69694ZM7.74709 16.3279C7.04087 16.4217 6.32292 16.294 5.694 15.9632C5.06474 15.6325 4.55644 15.1151 4.23996 14.4835C3.92365 13.852 3.81513 13.1385 3.92987 12.4429C4.04476 11.7476 4.37703 11.105 4.87996 10.6062C5.3829 10.1069 6.03148 9.77633 6.73414 9.66062C7.4368 9.54485 8.15863 9.64982 8.7981 9.96094C9.43726 10.2717 9.96204 10.773 10.2984 11.3943C10.6348 12.0155 10.7658 12.7252 10.6736 13.4242C10.5766 14.1591 10.237 14.842 9.70808 15.3669C9.17894 15.8917 8.4897 16.2297 7.74709 16.3279ZM17.0593 6.94685C16.8377 6.94736 16.619 6.99675 16.4191 7.09148C16.2192 7.18622 16.0431 7.32384 15.9039 7.49431C15.7643 7.66464 15.665 7.86391 15.6133 8.07687C15.5616 8.29003 15.5582 8.51197 15.6041 8.72626C15.7443 9.42138 16.4004 9.89595 17.1152 9.89595H21.2636L14.8078 18.3467C14.7601 18.4091 14.731 18.4835 14.7236 18.5614C14.7159 18.6391 14.7307 18.7176 14.7658 18.7878C14.8009 18.8579 14.855 18.917 14.922 18.9583C14.9894 18.9998 15.0666 19.0218 15.1458 19.0221H25.2718C25.9863 19.0221 26.6429 18.5476 26.7832 17.8525C26.829 17.6378 26.8258 17.4161 26.7741 17.2031C26.7224 16.9898 26.6231 16.7909 26.4838 16.6204C26.3446 16.45 26.1685 16.3125 25.9686 16.2177C25.7689 16.1228 25.5502 16.0734 25.3286 16.0728H20.2743L26.725 7.62889C26.7731 7.56574 26.8026 7.49077 26.81 7.41201C26.8178 7.33338 26.803 7.25412 26.7674 7.18357C26.7319 7.11264 26.6773 7.05302 26.6094 7.0114C26.5418 6.96953 26.4635 6.94723 26.3837 6.94685H17.0593ZM57.524 6.98115C57.1877 7.05978 56.8896 7.24957 56.6774 7.51868C56.4674 7.7878 56.3554 8.1202 56.3601 8.46106V13.3713L48.3165 7.03976C48.2535 6.99024 48.1777 6.9593 48.0976 6.95058C48.0175 6.94199 47.9365 6.95563 47.8641 6.99037C47.7915 7.02517 47.7304 7.07923 47.6878 7.14675C47.6451 7.21464 47.6227 7.29258 47.6229 7.37222V17.5107C47.6173 17.8515 47.7297 18.1841 47.9414 18.453C48.1527 18.7221 48.4509 18.912 48.786 18.9907C49.0037 19.0383 49.2293 19.0366 49.4455 18.9862C49.6625 18.9358 49.8653 18.8379 50.0393 18.6995C50.2135 18.5614 50.3543 18.3864 50.4497 18.1871C50.5449 17.9882 50.5952 17.7705 50.5952 17.5502V12.5974L58.6379 18.9289C58.7024 18.9787 58.7787 19.0094 58.8574 19.0182C58.9386 19.0271 59.0196 19.0131 59.0911 18.9783C59.1627 18.9437 59.2247 18.8894 59.2677 18.8219C59.3106 18.7544 59.332 18.6765 59.332 18.5966V8.42121C59.332 8.20085 59.282 7.98315 59.1865 7.78407C59.0911 7.58519 58.9505 7.41031 58.7763 7.27205C58.6023 7.13399 58.3995 7.03591 58.1823 6.98551C57.9653 6.9353 57.7412 6.93359 57.524 6.98115ZM36.5802 9.61388C39.9824 9.61388 42.5244 11.3923 42.5244 12.9831C42.5244 14.5739 39.9824 16.3523 36.5802 16.3523C33.1782 16.3523 30.636 14.5739 30.636 12.9831C30.636 11.3923 33.1782 9.61388 36.5802 9.61388ZM36.5802 6.66485C31.6556 6.66485 27.6637 9.49363 27.6637 12.9831C27.6637 16.4724 31.6556 19.3014 36.5802 19.3014C41.5047 19.3014 45.4964 16.4724 45.4964 12.9831C45.4964 9.49363 41.5047 6.66485 36.5802 6.66485Z" fill="#001122" fill-opacity="0.45"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M98.1952 16.2474C98.2223 16.1618 98.2223 16.0735 98.2223 15.9838V12.5957C98.2223 11.3748 98.7175 10.4996 99.4602 10.0103C101.194 8.87003 104.083 9.73984 104.083 12.5842V18.5857C104.083 18.818 104.276 19.0061 104.496 19.0061H106.587C106.807 19.0061 107 18.818 107 18.5857V12.5842C107 7.13843 101.304 5.05274 98.1952 7.95292V0.892583C98.1952 0.780042 98.1396 0.67191 98.0575 0.592666C97.9748 0.51287 97.8649 0.468018 97.755 0.468018H95.691C95.5533 0.468018 95.4705 0.51287 95.3607 0.592666C95.3057 0.67191 95.2501 0.780042 95.2501 0.892583V18.5794C95.2501 18.8138 95.4434 19.0039 95.691 19.0039H97.755C98.0025 19.0039 98.1952 18.8138 98.1952 18.5794V16.2474Z" fill="#001122" fill-opacity="0.45"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M83.1156 12.9754C83.1156 11.3445 83.6941 9.71748 84.9598 8.48312C87.0788 6.35584 90.3529 6.07297 92.8293 7.63756C92.912 7.69725 93.0491 7.77373 93.1318 7.85432C93.2695 7.98891 93.3244 8.20819 93.2423 8.38403C92.9392 8.81742 92.3619 9.57329 91.9767 10.106C91.8112 10.2774 91.5908 10.3209 91.3981 10.2078C91.3432 10.1737 91.2882 10.1437 91.2333 10.1255C88.5093 8.35902 85.8674 10.6803 85.8674 12.9754C85.8674 15.2705 88.4537 17.6011 91.2333 15.8255C91.2882 15.8074 91.3432 15.7771 91.3981 15.7432C91.5908 15.6301 91.8112 15.6739 91.9767 15.8453C92.3619 16.378 92.9392 17.1336 93.2423 17.567C93.3244 17.7431 93.2695 17.9621 93.1318 18.0967C93.0491 18.1775 92.912 18.2538 92.8293 18.3138C90.3529 19.8781 87.0788 19.5949 84.9598 17.4682C83.6941 16.2333 83.1156 14.6065 83.1156 12.9754Z" fill="#001122" fill-opacity="0.45"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M73.045 14.0291H79.9242C80.7497 14.0291 81.4103 13.3699 81.4103 12.5573C81.4103 10.7484 81.1072 9.78369 80.0619 8.55262C78.9888 7.31491 77.2823 6.6438 75.9617 6.6438C72.6598 6.6438 70.1284 9.43835 70.1284 12.9758C70.1284 17.3343 73.5402 19.3075 76.2642 19.3075C78.2177 19.3075 79.7309 18.8412 81.217 17.9122C81.3825 17.79 81.4646 17.5399 81.3547 17.3426C81.0522 16.8462 80.612 16.1223 80.2823 15.6309C80.1718 15.4454 79.9242 15.3909 79.7316 15.5065C78.7962 16.0579 77.8053 16.5435 76.3198 16.5328C74.9436 16.5235 73.4853 15.6537 73.045 14.0291ZM78.4109 11.6135C78.1634 9.7859 76.897 9.4518 75.9617 9.4518C74.696 9.4518 73.6229 10.3851 73.1549 11.6135H78.4109Z" fill="#001122" fill-opacity="0.45"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M61.543 9.63772C61.543 9.6141 61.543 9.58934 61.543 9.56458V7.36795C61.543 7.1594 61.6808 6.98104 61.9009 6.94447C62.2036 6.89496 62.6163 6.82479 62.7264 6.7934C63.2217 6.64346 64.873 6.28987 64.873 3.9777V0.893404C64.873 0.658419 65.0657 0.468018 65.2855 0.468018H67.3766C67.6242 0.468018 67.7897 0.658419 67.7897 0.893404V3.9777C67.7897 7.13047 65.533 8.37064 65.4231 8.45868C65.533 8.54452 67.7069 9.7046 67.7897 12.7306C67.7897 12.8065 67.8168 12.8835 67.8168 12.9617V16.046C67.8168 16.0547 67.8168 16.0633 67.7897 16.0718C67.7897 16.0718 67.7897 18.0711 67.7897 19.5246C67.7897 20.342 68.4775 21.0049 69.2751 21.0052C69.8259 21.0052 70.4038 21.0052 70.8162 21.0063C71.0366 21.0151 71.2292 21.2094 71.2292 21.4463C71.2292 22.0062 71.2564 22.6977 71.2564 23.497C71.2564 23.6146 71.2015 23.7274 71.1465 23.8105C71.036 23.8938 70.9261 23.9406 70.8162 23.9406H69.6604L69.6055 23.9409C68.3669 23.9422 67.1568 23.4505 66.2758 22.5711C65.3682 21.6799 64.873 20.4647 64.873 19.1969V12.9339C64.873 12.8995 64.873 12.8648 64.873 12.8299C64.8181 10.6361 63.2217 10.2929 62.7264 10.1459C62.6163 10.1146 62.2036 10.0445 61.9009 9.99462C61.7083 9.96241 61.5705 9.81961 61.543 9.64327V9.63772Z" fill="#001122" fill-opacity="0.45"></path></g><defs><clippath id="clip0_2246_24735"><rect width="106.105" height="24" fill="white" transform="translate(0.894775)"></rect></clippath></defs></svg><!----></button></li><li class="_listItem_1k3l7_40 _routeTelegramWrapper_1k3l7_46"><button type="button" class="ozi__link-pseudo__linkPseudo__9vjoS ozi__link-common__onLight__QaR0v ozi__link-common__primary__QaR0v _links_1k3l7_51"><!----><!----><span class="_listItemText_1k3l7_68 ozi-body-400">Правила участия</span></button></li></ul></nav></footer></div></div><script type="application/json" id="__NUXT_DATA__" data-ssr="false" nonce="">[{"_errors":1,"serverRendered":2,"data":3,"state":4},{},false,{},{}]</script><script nonce="">window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="module" src="./task-04_files/entry.63687e74.js" crossorigin="" nonce=""></script>
+<div id="modheader-shadow-root-host-el-id" style="display: initial !important;"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://idgpnmonknjnojddfkpgkljpfnnfcklj/assets/AppVite-6c90dbf6.css"><style id="svelte-g289qm">#ModHeader-shadow-root{all:initial;font-size:16px;font-family:Roboto, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important}@tailwind base;@tailwind components;@tailwind utilities;</style><style id="svelte-4ht38r">#modheader-tool-suspend-btn.svelte-4ht38r{position:fixed;top:30vh;right:0;z-index:2147483640;transition:transform 0.3s;cursor:pointer;user-select:none;font-size:16px;visibility:hidden}#modheader-tool-suspend-btn.rest.svelte-4ht38r:hover{transform:translate(0, 0) !important}.suspend-btn.svelte-4ht38r{border-radius:50%;width:2.25em;height:2.25em}.memory-button.svelte-4ht38r{display:flex;width:100%;height:100%;border-radius:50%;align-items:center;justify-content:center;font-size:12px;font-weight:700;background-color:#56a9ff;color:white;box-shadow:0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);gap:1px;flex-wrap:wrap;line-height:1;zoom:0.94}.tooltip.svelte-4ht38r{position:absolute;top:0;bottom:0;height:min-content;margin:auto;font-size:12px;background-color:rgb(1, 1, 1, 0.9);font-weight:100;white-space:nowrap;color:#dddddd;padding:5px 9px;border-radius:5px;box-shadow:0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);opacity:0;visibility:hidden;transition:visibility 0s linear 0.1s, opacity 0.1s linear}</style><div id="ModHeader-shadow-root" style="visibility: visible; opacity: 1; transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s;"><div id="modheader-tool-suspend-btn" class="memory-view svelte-4ht38r" style="transform: translate(-1%, 0px); visibility: visible;"><button class="suspend-btn svelte-4ht38r" style="zoom: 1.2;"><div class="tooltip svelte-4ht38r" i18n="memory_btn_tooltip" style="visibility: hidden; opacity: 0;">page memory usage</div> <div class="memory-button svelte-4ht38r"><span>36</span> <span>M</span></div></button></div></div></template></div><div id="ods-window-teleport-target" class="ozi__window__target__TnhB4"></div><!----><!----><!----><!----><div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div></div><!----><!----><!----><!----><!----><!----></body></html>
