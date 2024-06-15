@@ -23,20 +23,6 @@ func main() {
 // SOME FUNCTIONS MIGHT NOT BE USED
 //////////////////////////////////////////////////
 
-func min(i, j int) int {
-	if i < j {
-		return i
-	}
-	return j
-}
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
-}
-
 func readInt(in *bufio.Reader) int {
 	l, _ := strconv.Atoi(readLine(in))
 	return l
