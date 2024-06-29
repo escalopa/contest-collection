@@ -320,3 +320,35 @@ func worker() chan int {
     return ch
 }
 ```
+
+## Nil reponse body
+
+```go
+package main
+
+import (
+    "fmt"
+    "io"
+    "net/http"
+    "net/url"
+    "os"
+)
+
+func main() {
+    client := http.Client{}
+    url, _ := url.Parse("https://no.such.host")
+    request := &http.Request{
+        Method: "GET",
+        URL:    url,
+    }
+
+    response, err := client.Do(request)
+    defer response.Body.Close()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Request failed: %s\n", err.Error())
+    }
+
+    io.Copy(os.Stdout, response.Body)
+
+}
+```
