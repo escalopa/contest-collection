@@ -1,7 +1,33 @@
-## Questions
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
----
+- [cyclic channel loop](#cyclic-channel-loop)
+- [merge channels](#merge-channels)
+- [map ordering](#map-ordering)
+- [star question](#star-question)
+- [mutate slice in function](#mutate-slice-in-function)
+- [pointer to nil error](#pointer-to-nil-error)
+- [merge slices](#merge-slices)
+- [close channel](#close-channel)
+- [parallel processing](#parallel-processing)
+- [nil map](#nil-map)
+- [mutate struct in function](#mutate-struct-in-function)
+- [error printing on painc](#error-printing-on-painc)
+- [select statement](#select-statement)
+- [channel deadlock](#channel-deadlock)
+- [for loop with goroutine](#for-loop-with-goroutine)
+- [read from 2 channels](#read-from-2-channels)
+- [nil response body](#nil-response-body)
+- [slice modification and append behavior](#slice-modification-and-append-behavior)
+- [defer behavior](#defer-behavior)
+- [defer in for loop](#defer-in-for-loop)
+- [goroutines, waitgroup, and execution order](#goroutines-waitgroup-and-execution-order)
+- [race condition on map write](#race-condition-on-map-write)
+- [merge multiple channels into one (2nd edition)](#merge-multiple-channels-into-one-2nd-edition)
+- [system design: database scaling](#system-design-database-scaling)
 
+<!-- TOC end -->
+
+<!-- TOC --><a name="cyclic-channel-loop"></a>
 ### cyclic channel loop
 
 ```go
@@ -39,6 +65,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="merge-channels"></a>
 ### merge channels
 
 ```go
@@ -73,6 +100,7 @@ func mergeChannels(chans ...<-chan int) <-chan int {
 
 ---
 
+<!-- TOC --><a name="map-ordering"></a>
 ### map ordering
 
 ```go
@@ -91,6 +119,7 @@ func main () {
 
 ---
 
+<!-- TOC --><a name="star-question"></a>
 ### star question
 
 ```go
@@ -119,6 +148,7 @@ func (s *Storage) Get(id types.WarehouseId) *warehouse.Warehouse {
 
 ---
 
+<!-- TOC --><a name="mutate-slice-in-function"></a>
 ### mutate slice in function
 
 ```go
@@ -141,6 +171,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="pointer-to-nil-error"></a>
 ### pointer to nil error
 
 ```go
@@ -169,6 +200,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="merge-slices"></a>
 ### merge slices
 
 ```go
@@ -188,6 +220,7 @@ func MergeSlice(list1 []int, list2 []int) []int {
 
 ---
 
+<!-- TOC --><a name="close-channel"></a>
 ### close channel
 
 ```go
@@ -219,6 +252,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="parallel-processing"></a>
 ### parallel processing
 
 ```go
@@ -243,6 +277,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="nil-map"></a>
 ### nil map
 
 ```go
@@ -263,6 +298,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="mutate-struct-in-function"></a>
 ### mutate struct in function
 
 ```go
@@ -293,6 +329,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="error-printing-on-painc"></a>
 ### error printing on painc
 
 ```go
@@ -309,6 +346,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="select-statement"></a>
 ### select statement
 
 ```go
@@ -343,6 +381,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="channel-deadlock"></a>
 ### channel deadlock
 
 ```go
@@ -365,6 +404,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="for-loop-with-goroutine"></a>
 ### for loop with goroutine
 
 ```go
@@ -383,6 +423,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="read-from-2-channels"></a>
 ### read from 2 channels
 
 ```go
@@ -410,6 +451,7 @@ func worker() chan int {
 
 ---
 
+<!-- TOC --><a name="nil-response-body"></a>
 ### nil response body
 
 ```go
@@ -443,6 +485,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="slice-modification-and-append-behavior"></a>
 ### slice modification and append behavior
 
 ```go
@@ -471,6 +514,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="defer-behavior"></a>
 ### defer behavior
 
 ```go
@@ -490,6 +534,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="defer-in-for-loop"></a>
 ### defer in for loop
 
 ```go
@@ -514,6 +559,7 @@ func main() {
 }
 ```
 
+<!-- TOC --><a name="goroutines-waitgroup-and-execution-order"></a>
 ### goroutines, waitgroup, and execution order
 
 ```go
@@ -545,6 +591,7 @@ func main() {
 }
 ```
 
+<!-- TOC --><a name="race-condition-on-map-write"></a>
 ### race condition on map write
 
 ```go
@@ -583,6 +630,7 @@ func f2() {
 
 ---
 
+<!-- TOC --><a name="merge-multiple-channels-into-one-2nd-edition"></a>
 ### merge multiple channels into one (2nd edition)
 
 ```go
@@ -635,6 +683,7 @@ func main() {
 
 ---
 
+<!-- TOC --><a name="system-design-database-scaling"></a>
 ### system design: database scaling
 
 ```
