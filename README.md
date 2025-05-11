@@ -1,3 +1,2 @@
-## Interview
 
 - [go](./go)
